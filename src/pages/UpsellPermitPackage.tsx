@@ -103,12 +103,66 @@ export const UpsellPermitPackage: React.FC = () => {
                                     <FileText className="w-4 h-4 text-safety-orange" />
                                     Step 1: Select Your Plan
                                 </h3>
+
+                                {/* Visual Plan Selector */}
+                                <div className="mb-6">
+                                    <div className="text-sm text-slate-500 mb-2">Click a plan to select it:</div>
+                                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 max-h-60 overflow-y-auto p-2 border border-slate-200 rounded bg-slate-50">
+                                        {plans.map(plan => {
+                                            const isSelected = selectedPlan === plan.id.toString();
+                                            return (
+                                                <button
+                                                    key={plan.id}
+                                                    onClick={() => setSelectedPlan(plan.id.toString())}
+                                                    className={`relative aspect-square rounded overflow-hidden border-2 transition-all ${isSelected ? 'border-safety-orange ring-2 ring-safety-orange/30' : 'border-transparent hover:border-slate-300'}`}
+                                                >
+                                                    <img
+                                                        src={`/floorplans/${plan.id}-3DPLAN.jpg`} // Assuming standard naming convention
+                                                        alt={plan.name}
+                                                        className="w-full h-full object-cover"
+                                                        onError={(e) => {
+                                                            (e.target as HTMLImageElement).src = 'https://placehold.co/100x100?text=Plan+' + plan.id;
+                                                        }}
+                                                    />
+                                                    {isSelected && (
+                                                        <div className="absolute inset-0 bg-safety-orange/20 flex items-center justify-center">
+                                                            <CheckCircle2 className="w-6 h-6 text-white drop-shadow-md" />
+                                                        </div>
+                                                    )}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+
+                                {/* Selected Plan Preview */}
+                                {selectedPlan && (
+                                    <div className="mb-6 p-4 bg-slate-50 border border-slate-200 rounded flex gap-4 items-center animate-fadeIn">
+                                        <div className="w-20 h-20 bg-white rounded border border-slate-200 overflow-hidden flex-shrink-0">
+                                            <img
+                                                src={`/floorplans/${selectedPlan}-3DPLAN.jpg`}
+                                                alt="Selected Plan"
+                                                className="w-full h-full object-cover"
+                                                onError={(e) => {
+                                                    (e.target as HTMLImageElement).src = 'https://placehold.co/100x100?text=Plan+' + selectedPlan;
+                                                }}
+                                            />
+                                        </div>
+                                        <div>
+                                            <div className="text-xs text-slate-500 font-bold uppercase">Selected Plan</div>
+                                            <div className="font-bold text-slate-900">
+                                                Plan #{selectedPlan} - {plans.find(p => p.id.toString() === selectedPlan)?.name.split(' - ')[1]}
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
                                 <select
                                     value={selectedPlan}
                                     onChange={(e) => setSelectedPlan(e.target.value)}
                                     className="w-full border border-slate-300 rounded px-3 py-2 text-slate-900 mb-6 focus:ring-2 focus:ring-safety-orange focus:border-transparent outline-none"
                                 >
-                                    <option value="">-- Choose one plan from the bundle --</option>
+                                    <option value="">-- Or select from list --</option>
                                     {plans.map(plan => (
                                         <option key={plan.id} value={plan.id}>{plan.name}</option>
                                     ))}
