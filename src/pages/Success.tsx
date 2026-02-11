@@ -20,10 +20,10 @@ export const Success: React.FC = () => {
                         We've sent a receipt to your email. You can download the complete "Engineer's Vault" bundle immediately using the button below.
                     </p>
 
-                    <button className="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-all mb-4 group">
+                    <a href="/downloads/plans-bundle.zip" download className="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-all mb-4 group decoration-sky-500/0">
                         <Download className="w-5 h-5 group-hover:animate-bounce" />
                         <span>Download All 30 Plans (ZIP)</span>
-                    </button>
+                    </a>
                     <p className="text-xs text-slate-400 mb-8">File size: 145 MB • PDF Format</p>
 
                     <div className="border-t border-slate-100 pt-6">

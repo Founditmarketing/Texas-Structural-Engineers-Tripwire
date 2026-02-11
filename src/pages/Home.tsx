@@ -162,23 +162,31 @@ export const Home: React.FC = () => {
                             </div>
 
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
-                                {/* Blueprint cards */}
-                                {['The Alpine (12x20)', 'The Summit (16x24)', 'The Creek (8x24)', 'The Haven (20x30)'].map((name, i) => (
-                                    <div key={i} className="bg-blue-900 border border-blue-400/30 p-3 rounded shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center">
-                                        <div className="w-full aspect-[3/4] bg-blue-800 border-2 border-white/20 mb-3 flex flex-col justify-center items-center p-2 relative overflow-hidden">
-                                            {/* Fake Blueprint Lines */}
-                                            <div className="absolute inset-4 border border-white/30"></div>
-                                            <div className="absolute top-1/2 left-4 right-4 h-px bg-white/30"></div>
-                                            <div className="absolute left-1/2 top-4 bottom-4 w-px bg-white/30"></div>
-                                            <FileCheck className="text-white/40 w-10 h-10 relative z-10" />
+                                {/* Floorplan cards */}
+                                {[
+                                    { name: 'Plan #1: Studio', path: '/floorplans/1-3DPLAN.jpg' },
+                                    { name: 'Plan #2: One-Bedroom', path: '/floorplans/2-3DPLAN.jpg' },
+                                    { name: 'Plan #3: Modern Loft', path: '/floorplans/3-3DPLAN.jpg' },
+                                    { name: 'Plan #4: Family Cabin', path: '/floorplans/4-3DPLAN.jpg' }
+                                ].map((plan, i) => (
+                                    <div key={i} className="bg-white border border-slate-200 p-3 rounded shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center">
+                                        <div className="w-full aspect-[3/4] bg-slate-100 border-2 border-slate-200 mb-3 flex flex-col justify-center items-center relative overflow-hidden rounded group">
+                                            <img
+                                                src={plan.path}
+                                                alt={plan.name}
+                                                className="w-full h-full object-cover blur-[2px] transition-all duration-300 group-hover:blur-[1px]"
+                                            />
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <span className="text-slate-900/50 font-black text-lg -rotate-45 select-none border-2 border-slate-900/50 px-2 py-1">PREVIEW ONLY</span>
+                                            </div>
                                         </div>
-                                        <p className="text-blue-100 text-xs font-mono font-bold">{name}</p>
-                                        <p className="text-blue-300 text-[10px] uppercase tracking-wider">Approved</p>
+                                        <p className="text-slate-900 text-xs font-bold">{plan.name}</p>
+                                        <p className="text-safety-orange text-[10px] uppercase tracking-wider font-bold">Engineer Approved</p>
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="mt-8 relative z-10 border-t border-slate-600 pt-6">
+                            <div className="mt-8 relative z-10 border-t border-slate-700 pt-6">
                                 <h4 className="font-bold text-white text-xl mb-2">30 Complete Sets Included</h4>
                                 <p className="text-slate-400 text-sm">Includes: Floor Plans, Framing Schedules, Foundation Plans, Roof Logic, Connection Details.</p>
                             </div>
@@ -224,6 +232,57 @@ export const Home: React.FC = () => {
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 6.5 Complete Portfolio Preview */}
+            <section className="py-20 bg-slate-50">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Complete 30-Plan Portfolio Preview</h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">
+                            From 160 sq ft studios to 800 sq ft multi-bedroom cabins. Every plan in the vault is included in the $17 bundle.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        {[
+                            { id: 5, path: '/floorplans/5-3DPLAN.jpg' },
+                            { id: 6, path: '/floorplans/6-3DPLAN.jpg' },
+                            { id: 7, path: '/floorplans/7-3DPLAN.jpg' },
+                            { id: 8, path: '/floorplans/8-3DPLAN.jpg' },
+                            { id: 9, path: '/floorplans/9-3D9LAN-CABIN (1).jpg' },
+                            { id: 10, path: '/floorplans/10-3DPLAN.jpg' },
+                            { id: 11, path: '/floorplans/11-3DPLAN.jpg' },
+                            { id: 12, path: '/floorplans/12-3DPLAN.jpg' },
+                            { id: 14, path: '/floorplans/14-3DPLAN.jpg' },
+                            { id: 21, path: '/floorplans/21-3DPLAN.jpg' },
+                            { id: 22, path: '/floorplans/22-3DPLAN.jpg' },
+                            { id: 24, path: '/floorplans/24-3DPLAN.jpg' }
+                        ].map((plan) => (
+                            <div key={plan.id} className="group relative aspect-square bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <img
+                                    src={plan.path}
+                                    alt={`Plan ${plan.id}`}
+                                    className="w-full h-full object-cover blur-[2px] transition-all duration-500 group-hover:blur-[1px] group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                    <span className="text-slate-900/40 font-black text-xs -rotate-45 select-none border border-slate-900/40 px-1">PREVIEW</span>
+                                </div>
+                                <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span className="text-white font-bold text-sm">Plan #{plan.id}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="text-center mt-10">
+                        <button
+                            onClick={scrollToPricing}
+                            className="text-safety-orange font-bold flex items-center gap-2 mx-auto hover:gap-3 transition-all"
+                        >
+                            View All 30 Plans in the Bundle <ArrowRight className="w-5 h-5" />
+                        </button>
                     </div>
                 </div>
             </section>

@@ -30,8 +30,11 @@ export const Checkout: React.FC = () => {
                                 Review Your Order
                             </h2>
                             <div className="flex gap-4 items-start">
-                                <div className="w-24 h-24 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <FileCheckIcon className="w-10 h-10 text-slate-400" />
+                                <div className="w-24 h-24 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden border border-slate-200 relative">
+                                    <img src="/floorplans/1-3DPLAN.jpg" alt="Plan Bundle" className="w-full h-full object-cover blur-[1px]" />
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-[8px] font-bold text-slate-900/50 -rotate-45 border border-slate-900/50 px-1">PREVIEW</span>
+                                    </div>
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-slate-900">The Engineer's Vault: 30-Plan Bundle</h3>
