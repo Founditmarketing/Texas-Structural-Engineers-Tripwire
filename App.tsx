@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Home } from './src/pages/Home';
 import { Checkout } from './src/pages/Checkout';
 import { Success } from './src/pages/Success';
+import { UpsellPermitPackage } from './src/pages/UpsellPermitPackage';
+import { UpsellSitePlan } from './src/pages/UpsellSitePlan';
 
 // Wrapper to handle scroll to top on route change
 const ScrollToTop = () => {
@@ -22,6 +24,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/upsell-permit" element={<UpsellPermitPackage />} />
+        <Route path="/upsell-site" element={<UpsellSitePlan />} />
         <Route path="/success" element={<Success />} />
       </Routes>
     </Router>

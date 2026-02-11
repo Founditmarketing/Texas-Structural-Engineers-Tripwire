@@ -8,7 +8,7 @@ export const Checkout: React.FC = () => {
     const handlePayment = () => {
         // Placeholder for Stripe Payment Link redirection
         // window.location.href = 'YOUR_STRIPE_PAYMENT_LINK';
-        navigate('/success'); // Simulating success for now
+        navigate('/upsell-permit'); // Redirect to first upsell
     };
 
     return (
