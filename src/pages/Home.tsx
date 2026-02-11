@@ -307,7 +307,7 @@ export const Home: React.FC = () => {
                                 <li className="flex items-center justify-between border-b border-slate-100 pb-2">
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="text-safety-orange w-6 h-6" />
-                                        <span className="font-medium">30 Engineer-stamped Floor Plans</span>
+                                        <span className="font-medium">30 Fully Engineered Plans (400 sq ft)</span>
                                     </div>
                                     <span className="font-bold text-slate-400">$1,500</span>
                                 </li>
