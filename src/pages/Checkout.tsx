@@ -45,7 +45,7 @@ export const Checkout: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="ml-auto text-right">
-                                    <p className="font-bold text-xl text-slate-900">$17.00</p>
+                                    <p className="font-bold text-xl text-slate-900">$30.00</p>
                                     <p className="text-slate-400 line-through text-sm">$3,100.00</p>
                                 </div>
                             </div>
@@ -82,11 +82,11 @@ export const Checkout: React.FC = () => {
                             </div>
                             <div className="flex items-center justify-between mb-4 text-green-600">
                                 <span>Discount</span>
-                                <span>-$3,083.00</span>
+                                <span>-$3,070.00</span>
                             </div>
                             <div className="border-t border-slate-100 pt-4 mb-6 flex items-center justify-between">
                                 <span className="font-bold text-slate-900 text-lg">Total</span>
-                                <span className="font-black text-2xl text-slate-900">$17.00</span>
+                                <span className="font-black text-2xl text-slate-900">$30.00</span>
                             </div>
 
                             <button

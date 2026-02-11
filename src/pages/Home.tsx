@@ -72,7 +72,7 @@ export const Home: React.FC = () => {
                             onClick={scrollToPricing}
                             className="bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-200 animate-pulse-fast flex items-center gap-3"
                         >
-                            Get the 30-Plan Bundle – $17
+                            Get the 30-Plan Bundle – $30
                             <ArrowRight className="w-6 h-6" />
                         </button>
                         <p className="text-slate-400 text-sm mt-2 md:mt-0">
@@ -340,8 +340,11 @@ export const Home: React.FC = () => {
                             </div>
 
                             <div className="flex items-center justify-between mb-8">
-                                <span className="text-xl font-bold text-slate-900">Today's Price</span>
-                                <span className="text-6xl font-black text-safety-orange">$17</span>
+                                <div>
+                                    <span className="block text-xl font-bold text-slate-900">Today's Price</span>
+                                    <span className="text-xs text-slate-400 font-medium">Single plans also available for $17</span>
+                                </div>
+                                <span className="text-6xl font-black text-safety-orange">$30</span>
                             </div>
 
                             <button
