@@ -47,7 +47,7 @@ export const UpsellSitePlan: React.FC = () => {
                                 <div>
                                     <h2 className="text-2xl font-bold text-slate-900">Custom Site Development Plan</h2>
                                     <div className="flex items-center gap-2 mt-1">
-                                        <span className="text-3xl font-black text-slate-900">$2,500</span>
+                                        <span className="text-3xl font-black text-slate-900">$250</span>
                                         <span className="text-sm bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">Professional Civil Engineering</span>
                                     </div>
                                     <p className="text-slate-500 text-sm mt-2">
@@ -78,7 +78,7 @@ export const UpsellSitePlan: React.FC = () => {
                                 className="w-full bg-slate-900 hover:bg-slate-800 text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                             >
                                 <CheckCircle2 className="w-6 h-6" />
-                                <span>Add Site Plan to Order - $2,500</span>
+                                <span>Add Site Plan to Order - $250</span>
                             </button>
 
                             <button

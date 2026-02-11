@@ -69,7 +69,7 @@ export const UpsellPermitPackage: React.FC = () => {
                                 <div>
                                     <h2 className="text-2xl font-bold text-slate-900">Building Permit Ready Package</h2>
                                     <div className="flex items-center gap-2 mt-1">
-                                        <span className="text-3xl font-black text-green-600">$995</span>
+                                        <span className="text-3xl font-black text-green-600">$950</span>
                                         <span className="text-xl text-slate-400 line-through font-bold">$3,500</span>
                                     </div>
                                     <p className="text-slate-500 text-sm mt-2">
@@ -197,7 +197,7 @@ export const UpsellPermitPackage: React.FC = () => {
                                 className="w-full bg-green-600 hover:bg-green-700 text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                             >
                                 <ShieldCheck className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                                <span>YES! Upgrade My Order for $995</span>
+                                <span>YES! Upgrade My Order for $950</span>
                             </button>
 
                             <button
@@ -211,7 +211,7 @@ export const UpsellPermitPackage: React.FC = () => {
                 </div>
 
                 <p className="text-center text-slate-400 text-xs mt-8 max-w-lg mx-auto">
-                    By clicking "Yes", you agree to the Terms of Service. The $995 engineering fee covers one specific plan for one specific address. Revisions or site changes may incur additional fees.
+                    By clicking "Yes", you agree to the Terms of Service. The $950 engineering fee covers one specific plan for one specific address. Revisions or site changes may incur additional fees.
                 </p>
             </div>
         </div>

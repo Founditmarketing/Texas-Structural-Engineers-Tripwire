@@ -60,7 +60,7 @@ export const Home: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                        Build a Debt-Free Tiny Home in <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">30 Days</span> for <br className="hidden md:block" /> Under <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">$40k.</span>
+                        Build a Debt-Free Tiny Home in <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">30 Days</span> with <br className="hidden md:block" /> 30 Architectural Plans for <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">$30.</span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -307,7 +307,7 @@ export const Home: React.FC = () => {
                                 <li className="flex items-center justify-between border-b border-slate-100 pb-2">
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="text-safety-orange w-6 h-6" />
-                                        <span className="font-medium">30 Fully Engineered Plans (400 sq ft)</span>
+                                        <span className="font-medium">30 Architectural Plan Sets (400 sq ft)</span>
                                     </div>
                                     <span className="font-bold text-slate-400">$1,500</span>
                                 </li>
