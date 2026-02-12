@@ -56,18 +56,46 @@ export const UpsellSitePlan: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-4 mb-2">
-                                <div className="bg-slate-50 p-4 rounded border border-slate-100">
-                                    <h4 className="font-bold text-slate-900 flex items-center gap-2 mb-2">
-                                        <TrendingUp className="w-4 h-4 text-safety-orange" /> Grading & Drainage
-                                    </h4>
-                                    <p className="text-xs text-slate-500">Prevent flooding. We calculate exactly how to slope the land away from your foundation.</p>
+                            {/* Tier Selection */}
+                            <div className="grid md:grid-cols-3 gap-4 mb-8">
+                                {/* Basic Tier */}
+                                <div className="border-2 border-slate-200 rounded-lg p-4 cursor-pointer hover:border-slate-300 relative">
+                                    <h3 className="font-bold text-slate-900 text-lg mb-1">Basic Site Plan</h3>
+                                    <p className="text-2xl font-black text-slate-900 mb-2">$1,500</p>
+                                    <p className="text-xs text-slate-500 mb-4">No drainage calculations. Layout only.</p>
+                                    <ul className="text-xs space-y-1 text-slate-600">
+                                        <li>✓ Site Layout</li>
+                                        <li>✓ Setbacks</li>
+                                        <li>✓ Basic Dimensions</li>
+                                    </ul>
                                 </div>
-                                <div className="bg-slate-50 p-4 rounded border border-slate-100">
-                                    <h4 className="font-bold text-slate-900 flex items-center gap-2 mb-2">
-                                        <FileCheck className="w-4 h-4 text-safety-orange" /> Utility Plan
-                                    </h4>
-                                    <p className="text-xs text-slate-500">Water, sewer, and electric connection paths designed to code.</p>
+
+                                {/* Pro Tier (Recommended) */}
+                                <div className="border-2 border-safety-orange bg-orange-50/10 rounded-lg p-4 cursor-pointer relative shadow-md transform scale-105">
+                                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-safety-orange text-white text-[10px] font-bold px-2 py-0.5 rounded">MOST POPULAR</div>
+                                    <h3 className="font-bold text-slate-900 text-lg mb-1">Grading & Drainage</h3>
+                                    <p className="text-2xl font-black text-safety-orange mb-2">$3,000</p>
+                                    <p className="text-xs text-slate-500 mb-4">Complete protection against flooding.</p>
+                                    <button onClick={() => navigate('/success')} className="w-full bg-safety-orange text-white text-xs font-bold py-2 rounded mb-3 hover:bg-safety-orange-hover">Select This Plan</button>
+                                    <ul className="text-xs space-y-1 text-slate-800 font-medium">
+                                        <li>✓ Everything in Basic</li>
+                                        <li>✓ <span className="text-safety-orange">Full Grading Plan</span></li>
+                                        <li>✓ <span className="text-safety-orange">Drainage Calculations</span></li>
+                                        <li>✓ Erosion Control</li>
+                                    </ul>
+                                </div>
+
+                                {/* Civil Tier */}
+                                <div className="border-2 border-slate-200 rounded-lg p-4 cursor-pointer hover:border-slate-300">
+                                    <h3 className="font-bold text-slate-900 text-lg mb-1">Full Civil Package</h3>
+                                    <p className="text-2xl font-black text-slate-900 mb-2">$4,500</p>
+                                    <p className="text-xs text-slate-500 mb-4">Complete utility & civil engineering.</p>
+                                    <ul className="text-xs space-y-1 text-slate-600">
+                                        <li>✓ Everything in Grading</li>
+                                        <li>✓ Utility Layout</li>
+                                        <li>✓ Civil Engineering</li>
+                                        <li>✓ City Coordination</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

@@ -67,7 +67,11 @@ export const UpsellPermitPackage: React.FC = () => {
                                     <ShieldCheck className="w-16 h-16 text-slate-800" />
                                 </div>
                                 <div>
-                                    <h2 className="text-2xl font-bold text-slate-900">Building Permit Ready Package</h2>
+                                    <h2 className="text-2xl font-bold text-slate-900">Signed & Sealed Engineering Package</h2>
+                                    <div className="flex items-center gap-1 mt-1 text-xs font-bold text-slate-500 uppercase tracking-wide">
+                                        <ShieldCheck className="w-3 h-3 text-safety-orange" />
+                                        Licensed in 26 States
+                                    </div>
                                     <div className="flex items-center gap-2 mt-1">
                                         <span className="text-3xl font-black text-green-600">$950</span>
                                         <span className="text-xl text-slate-400 line-through font-bold">$3,500</span>
