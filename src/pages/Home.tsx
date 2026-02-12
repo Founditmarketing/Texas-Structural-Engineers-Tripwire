@@ -64,9 +64,11 @@ export const Home: React.FC = () => {
                         <span className="text-sm font-medium text-slate-300 tracking-wide uppercase">Licensed Professional Engineers in 26 U.S. States</span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                        30 Modern Floor Plans Designed by a <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">Multi-State Licensed Engineering Firm</span>
+                    <h1 className="font-extrabold tracking-tight mb-6 leading-tight">
+                        <span className="text-4xl md:text-6xl block mb-2 text-white">30 Modern Floor Plans</span>
+                        <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500 block">
+                            Designed by a Multi-State Licensed Engineering Firm
+                        </span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
