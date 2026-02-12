@@ -192,100 +192,8 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
-            {/* 4. The Solution - ENHANCED VISUALS */}
+            {/* 4. Complete 30-Plan Portfolio Preview (Moved Up) */}
             <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-sm font-bold tracking-widest text-safety-orange uppercase mb-3">Introducing</h2>
-                    <h3 className="text-4xl font-bold text-slate-900 mb-8">The Engineer's Vault</h3>
-                    <p className="max-w-2xl mx-auto text-slate-600 mb-12 text-lg">
-                        We opened our firm's archive of approved tiny house projects. You get the exact same blueprints we charged custom clients $3,500+ to create.
-                    </p>
-
-                    {/* Visual Mockup Area */}
-                    <div className="relative max-w-5xl mx-auto mb-16">
-                        <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-hidden relative">
-                            {/* Decorative "blueprint" grid background */}
-                            <div className="absolute inset-0 opacity-10 pointer-events-none"
-                                style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
-                            </div>
-
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
-                                {/* Floorplan cards */}
-                                {[
-                                    { name: 'Plan #1: Studio', path: '/floorplans/1-3DPLAN.jpg' },
-                                    { name: 'Plan #2: One-Bedroom', path: '/floorplans/2-3DPLAN.jpg' },
-                                    { name: 'Plan #3: Modern Loft', path: '/floorplans/3-3DPLAN.jpg' },
-                                    { name: 'Plan #4: Family Cabin', path: '/floorplans/4-3DPLAN.jpg' }
-                                ].map((plan, i) => (
-                                    <div key={i} className="bg-white border border-slate-200 p-3 rounded shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center">
-                                        <div className="w-full aspect-[3/4] bg-slate-100 border-2 border-slate-200 mb-3 flex flex-col justify-center items-center relative overflow-hidden rounded group">
-                                            <img
-                                                src={plan.path}
-                                                alt={plan.name}
-                                                className="w-full h-full object-cover blur-[2px] transition-all duration-300 group-hover:blur-[1px]"
-                                            />
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-slate-900/50 font-black text-lg -rotate-45 select-none border-2 border-slate-900/50 px-2 py-1">PREVIEW ONLY</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-slate-900 text-xs font-bold">{plan.name}</p>
-                                        <p className="text-safety-orange text-[10px] uppercase tracking-wider font-bold">Engineer Approved</p>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="mt-8 relative z-10 border-t border-slate-700 pt-6">
-                                <h4 className="font-bold text-white text-xl mb-2">30 Complete Sets Included</h4>
-                                <p className="text-slate-400 text-sm">Includes: Floor Plans, Framing Schedules, Foundation Plans, Roof Logic, Connection Details.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 5. Interactive Calculator */}
-            <section className="py-20 bg-slate-100 border-y border-slate-200">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Can You Afford to Build?</h2>
-                        <p className="text-slate-600 max-w-xl mx-auto">
-                            Use our real-time materials calculator to estimate your project cost based on 2024 lumber prices.
-                        </p>
-                    </div>
-                    <Calculator />
-                </div>
-            </section>
-
-            {/* 6. Social Proof - TESTIMONIALS */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Real Builders, Real Permits</h2>
-                        <div className="flex justify-center items-center gap-2 mb-8">
-                            <div className="flex">
-                                {[1, 2, 3, 4, 5].map(i => <ShieldCheck key={i} className="w-6 h-6 text-safety-orange" />)}
-                            </div>
-                            <span className="font-bold text-slate-700">100% Approval Rate</span>
-                        </div>
-                    </div>
-                    <Testimonials items={TESTIMONIALS} />
-
-                    <div className="mt-16 pt-10 border-t border-slate-100">
-                        <p className="text-slate-500 font-semibold text-center mb-6 uppercase tracking-wider text-sm">Trusted in States with Strict Codes</p>
-                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
-                            {STATES.map(state => (
-                                <div key={state.code} className="flex items-center gap-3 border border-slate-200 rounded-full px-6 py-2 bg-slate-50">
-                                    <span className="font-black text-slate-400">{state.code}</span>
-                                    <span className="font-bold text-slate-600">{state.name}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 6.5 Complete Portfolio Preview */}
-            <section className="py-20 bg-slate-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-slate-900 mb-4">Complete 30-Plan Portfolio Preview</h2>
@@ -331,6 +239,100 @@ export const Home: React.FC = () => {
                         >
                             View All 30 Plans in the Bundle <ArrowRight className="w-5 h-5" />
                         </button>
+                    </div>
+                </div>
+            </section>
+
+            {/* 5. Interactive Calculator */}
+            {/* 5. Interactive Calculator - HIDDEN PER REQUEST */}
+            {/* <section className="py-20 bg-slate-100 border-y border-slate-200">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Can You Afford to Build?</h2>
+                        <p className="text-slate-600 max-w-xl mx-auto">
+                            Use our real-time materials calculator to estimate your project cost based on 2024 lumber prices.
+                        </p>
+                    </div>
+                    <Calculator />
+                </div>
+            </section> */}
+
+            {/* 6. Social Proof - TESTIMONIALS */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Real Builders, Real Permits</h2>
+                        <div className="flex justify-center items-center gap-2 mb-8">
+                            <div className="flex">
+                                {[1, 2, 3, 4, 5].map(i => <ShieldCheck key={i} className="w-6 h-6 text-safety-orange" />)}
+                            </div>
+                            <span className="font-bold text-slate-700">100% Approval Rate</span>
+                        </div>
+                    </div>
+                    <Testimonials items={TESTIMONIALS} />
+
+                    <div className="mt-16 pt-10 border-t border-slate-100">
+                        <p className="text-slate-500 font-semibold text-center mb-6 uppercase tracking-wider text-sm">Trusted in States with Strict Codes</p>
+                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
+                            {STATES.map(state => (
+                                <div key={state.code} className="flex items-center gap-3 border border-slate-200 rounded-full px-6 py-2 bg-slate-50">
+                                    <span className="font-black text-slate-400">{state.code}</span>
+                                    <span className="font-bold text-slate-600">{state.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 6.5 Complete Portfolio Preview */}
+            {/* 6.5 The Engineer's Vault (Moved Down) */}
+            <section className="py-20 bg-slate-50">
+                <div className="container mx-auto px-4 text-center">
+                    <h2 className="text-sm font-bold tracking-widest text-safety-orange uppercase mb-3">Introducing</h2>
+                    <h3 className="text-4xl font-bold text-slate-900 mb-8">The Engineer's Vault</h3>
+                    <p className="max-w-2xl mx-auto text-slate-600 mb-12 text-lg">
+                        We opened our firm's archive of approved tiny house projects. You get the exact same blueprints we charged custom clients $3,500+ to create.
+                    </p>
+
+                    {/* Visual Mockup Area */}
+                    <div className="relative max-w-5xl mx-auto mb-16">
+                        <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-hidden relative">
+                            {/* Decorative "blueprint" grid background */}
+                            <div className="absolute inset-0 opacity-10 pointer-events-none"
+                                style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
+                            </div>
+
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
+                                {/* Floorplan cards */}
+                                {[
+                                    { name: 'Plan #1: Studio', path: '/floorplans/1-3DPLAN.jpg' },
+                                    { name: 'Plan #2: One-Bedroom', path: '/floorplans/2-3DPLAN.jpg' },
+                                    { name: 'Plan #3: Modern Loft', path: '/floorplans/3-3DPLAN.jpg' },
+                                    { name: 'Plan #4: Family Cabin', path: '/floorplans/4-3DPLAN.jpg' }
+                                ].map((plan, i) => (
+                                    <div key={i} className="bg-white border border-slate-200 p-3 rounded shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center">
+                                        <div className="w-full aspect-[3/4] bg-slate-100 border-2 border-slate-200 mb-3 flex flex-col justify-center items-center relative overflow-hidden rounded group">
+                                            <img
+                                                src={plan.path}
+                                                alt={plan.name}
+                                                className="w-full h-full object-cover blur-[2px] transition-all duration-300 group-hover:blur-[1px]"
+                                            />
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <span className="text-slate-900/50 font-black text-lg -rotate-45 select-none border-2 border-slate-900/50 px-2 py-1">PREVIEW ONLY</span>
+                                            </div>
+                                        </div>
+                                        <p className="text-slate-900 text-xs font-bold">{plan.name}</p>
+                                        <p className="text-safety-orange text-[10px] uppercase tracking-wider font-bold">Engineer Approved</p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="mt-8 relative z-10 border-t border-slate-700 pt-6">
+                                <h4 className="font-bold text-white text-xl mb-2">30 Complete Sets Included</h4>
+                                <p className="text-slate-400 text-sm">Includes: Floor Plans, Framing Schedules, Foundation Plans, Roof Logic, Connection Details.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -411,8 +413,12 @@ export const Home: React.FC = () => {
                                     <span>SSL Secure Payment</span>
                                 </div>
                                 <div className="flex items-center gap-1">
+                                    <Shield className="w-3 h-3" />
+                                    <span>SSL Secure Payment</span>
+                                </div>
+                                <div className="flex items-center gap-1">
                                     <CreditCard className="w-3 h-3" />
-                                    <span>30-Day Money Back</span>
+                                    <span>Secure Processing</span>
                                 </div>
                             </div>
                         </div>
