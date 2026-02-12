@@ -25,7 +25,12 @@ export const Home: React.FC = () => {
     const navigate = useNavigate();
 
     const handleBuyClick = () => {
-        navigate('/checkout');
+        // For Option A ($39), we could route to a different checkout or pass a param
+        navigate('/checkout?plan=drip');
+    };
+
+    const handleInstantAccessClick = () => {
+        navigate('/checkout?plan=instant');
     };
 
     const scrollToPricing = () => {
