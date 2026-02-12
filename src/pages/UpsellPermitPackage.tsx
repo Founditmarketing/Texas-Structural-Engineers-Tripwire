@@ -94,7 +94,7 @@ export const UpsellPermitPackage: React.FC = () => {
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Permit education</strong> library.</span>
+                                    <span className="text-slate-700"><strong>Permit regulation updates</strong>.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />

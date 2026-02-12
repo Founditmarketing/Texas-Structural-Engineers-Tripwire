@@ -15,7 +15,7 @@ export const Checkout: React.FC = () => {
         price: 129.00,
         originalPrice: 5000.00, // Arbitrary anchor
         isRecurring: true,
-        features: ["Instant Access", "Weekly Q&A", "Permit Library"]
+        features: ["Instant Access", "Weekly Q&A", "Permit Regulation Updates"]
     } : {
         name: "Builder Starter Bundle",
         subtitle: "One-Time Purchase: 30 Professional Floor Plans",

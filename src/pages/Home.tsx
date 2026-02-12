@@ -357,7 +357,7 @@ export const Home: React.FC = () => {
                                 <ul className="space-y-4 mb-8">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                        <span className="font-bold">Instant access to all 30 plans</span>
+                                        <span className="font-bold">Instant access to all 30 plans in the membership program</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
@@ -365,7 +365,7 @@ export const Home: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                        <span>5 new custom plans added monthly</span>
+                                        <span>Access to several new custom plans added monthly for custom homes and additions</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
@@ -373,7 +373,7 @@ export const Home: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                        <span>Permit education library</span>
+                                        <span>Permit regulation updates</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
