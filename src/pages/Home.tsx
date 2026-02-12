@@ -361,7 +361,7 @@ export const Home: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                        <span>DWG files included</span>
+                                        <span>Revit files included</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />

@@ -86,7 +86,7 @@ export const UpsellPermitPackage: React.FC = () => {
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Instant Access</strong> to DWG files.</span>
+                                    <span className="text-slate-700"><strong>Instant Access</strong> to Revit files.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
