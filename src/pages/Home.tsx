@@ -488,7 +488,7 @@ export const Home: React.FC = () => {
                     <div className="flex flex-col md:flex-row justify-between items-center mb-8">
                         <div className="flex items-center gap-2 mb-4 md:mb-0">
                             <HardHat className="text-safety-orange w-8 h-8" />
-                            <span className="text-xl font-bold text-white tracking-tight">Texas Structural Engineers</span>
+                            <span className="text-xl font-bold text-white tracking-tight">Licensed Structural Engineers</span>
                         </div>
                         <div className="flex gap-6 text-sm">
                             <a href="https://www.quigig.com/privacy-policy/" className="hover:text-white transition-colors">Privacy Policy</a>
@@ -497,7 +497,7 @@ export const Home: React.FC = () => {
                         </div>
                     </div>
                     <div className="text-sm border-t border-slate-800 pt-8">
-                        <p>&copy; {new Date().getFullYear()} Texas Structural Engineers, LLC. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Licensed Structural Engineers. All rights reserved.</p>
                         <p className="mt-2 text-xs text-slate-500 max-w-3xl">
                             Disclaimer: Purchase of these plans includes a license for construction of one single-family residence per plan.
                             Local zoning laws and soil conditions vary. While plans are engineered to IRC standards, site-specific engineering (such as foundation design based on soil tests) may be required by your local building department.
