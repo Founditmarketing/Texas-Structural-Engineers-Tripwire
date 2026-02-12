@@ -72,7 +72,7 @@ export const Home: React.FC = () => {
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        From 400 sq ft ADUs to 5,000 sq ft custom homes — start planning today with professionally drafted layouts trusted by builders nationwide.
+                        From 200 sq ft ADUs to 5,000 sq ft custom homes — start planning today with professionally drafted layouts trusted by builders nationwide.
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
