@@ -412,37 +412,24 @@ export const Home: React.FC = () => {
             <section className="py-16 bg-slate-50 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
                     <div className="max-w-4xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-8">Why Builders Choose Us</h2>
-                        <div className="grid md:grid-cols-2 gap-8 text-left">
-                            <ul className="space-y-4">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700"><strong>Licensed Engineering Firm:</strong> Designed and supported by Licensed Civil Engineers, Inc., with partners across 26 states.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700"><strong>Real-World Buildability:</strong> Layouts developed with structural feasibility and permitting requirements considered.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700"><strong>Professional Quality:</strong> Professionally drafted PDFs and 3D rendered visuals — not generic internet templates.</span>
-                                </li>
-                            </ul>
-                            <ul className="space-y-4">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700"><strong>For Everyone:</strong> Ideal for homeowners, contractors, and developers planning homes, ADUs, or additions.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700"><strong>Seamless Upgrades:</strong> Easy path to signed & sealed structural and MEP plans when ready for permit.</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700"><strong>Instant Access:</strong> Avoid weeks of waiting — download instantly and begin feasibility planning immediately.</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <h2 className="text-3xl font-bold text-slate-900 mb-8">Led by Dr. Mir Emad Mousavi, Ph.D., P.E.</h2>
+                        <ul className="inline-block text-left space-y-4 mb-8">
+                            <li className="flex items-center gap-3 text-slate-700 text-lg">
+                                <CheckCircle2 className="w-6 h-6 text-safety-orange flex-shrink-0" />
+                                <strong>Multi-state licensed professional engineer.</strong>
+                            </li>
+                            <li className="flex items-center gap-3 text-slate-700 text-lg">
+                                <CheckCircle2 className="w-6 h-6 text-safety-orange flex-shrink-0" />
+                                <strong>Thousands of completed residential and commercial projects.</strong>
+                            </li>
+                            <li className="flex items-center gap-3 text-slate-700 text-lg">
+                                <CheckCircle2 className="w-6 h-6 text-safety-orange flex-shrink-0" />
+                                <strong>Operating across 26 U.S. states.</strong>
+                            </li>
+                        </ul>
+                        <p className="text-xl text-slate-600 font-medium italic">
+                            "When you're ready for permit-ready structural and MEP plans — you’re already in the right place."
+                        </p>
                     </div>
 
                     <div className="bg-slate-900 text-white p-8 rounded-xl shadow-lg border border-slate-700 inline-block text-left w-full max-w-4xl relative overflow-hidden">
