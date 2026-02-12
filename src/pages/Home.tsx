@@ -383,6 +383,10 @@ export const Home: React.FC = () => {
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
                                         <span>Priority support</span>
                                     </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span>Members live access to private chat group</span>
+                                    </li>
                                 </ul>
 
                                 <button
