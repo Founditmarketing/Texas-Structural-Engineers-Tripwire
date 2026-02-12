@@ -24,7 +24,27 @@ export const Success: React.FC = () => {
                         <Download className="w-5 h-5 group-hover:animate-bounce" />
                         <span>Download All 30 Plans (ZIP)</span>
                     </a>
-                    <p className="text-xs text-slate-400 mb-8">File size: 145 MB • PDF Format</p>
+
+                    <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-8">
+                        <div className="flex items-start gap-3 mb-3">
+                            <AlertTriangle className="w-5 h-5 text-safety-orange flex-shrink-0 mt-0.5" />
+                            <p className="text-sm text-slate-700 font-medium text-left">
+                                <span className="font-bold text-slate-900 block mb-1">Warning: Plans are NOT Permit-Ready</span>
+                                Your local building department will require signed & sealed engineering.
+                            </p>
+                        </div>
+                        <a
+                            href="https://sf.quigpro.com/engineering/165672"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block w-full bg-white text-safety-orange font-bold text-sm py-3 rounded border border-safety-orange hover:bg-safety-orange hover:text-white transition-colors flex items-center justify-center gap-2 shadow-sm"
+                        >
+                            Do you want it permit ready?
+                            <ArrowRight className="w-4 h-4" />
+                        </a>
+                    </div>
+
+                    <p className="text-xs text-slate-400 mb-2">File size: 145 MB • PDF Format</p>
 
                     <div className="border-t border-slate-100 pt-6">
                         <Link to="/" className="text-safety-orange hover:text-safety-orange-hover font-semibold flex items-center justify-center gap-2">
