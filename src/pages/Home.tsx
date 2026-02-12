@@ -461,12 +461,12 @@ export const Home: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-center mt-8">
-                            <button
-                                onClick={scrollToPricing}
+                            <a
+                                href="https://sf.quigpro.com/engineering/165672"
                                 className="bg-safety-orange hover:bg-safety-orange-hover text-white font-bold py-3 px-8 rounded-lg shadow-md transition-colors inline-flex items-center gap-2"
                             >
                                 Order Your Permit-Ready Plans <ArrowRight className="w-5 h-5" />
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -491,9 +491,9 @@ export const Home: React.FC = () => {
                             <span className="text-xl font-bold text-white tracking-tight">Texas Structural Engineers</span>
                         </div>
                         <div className="flex gap-6 text-sm">
-                            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-                            <a href="#" className="hover:text-white transition-colors">Support</a>
+                            <a href="https://www.quigig.com/privacy-policy/" className="hover:text-white transition-colors">Privacy Policy</a>
+                            <a href="https://www.quigig.com/terms-of-use/" className="hover:text-white transition-colors">Terms of Service</a>
+                            <a href="mailto:support@quiplans.com" className="hover:text-white transition-colors">Support</a>
                         </div>
                     </div>
                     <div className="text-sm border-t border-slate-800 pt-8">

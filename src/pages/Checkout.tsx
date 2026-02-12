@@ -136,6 +136,11 @@ export const Checkout: React.FC = () => {
 
                 <footer className="mt-12 text-center text-slate-400 text-sm">
                     <p>&copy; {new Date().getFullYear()} Texas Structural Engineers, LLC. All rights reserved.</p>
+                    <div className="flex justify-center gap-6 mt-4">
+                        <a href="https://www.quigig.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition-colors">Privacy Policy</a>
+                        <a href="https://www.quigig.com/terms-of-use/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition-colors">Terms of Service</a>
+                        <a href="mailto:support@quiplans.com" className="hover:text-slate-600 transition-colors">Support</a>
+                    </div>
                 </footer>
             </div>
         </div>

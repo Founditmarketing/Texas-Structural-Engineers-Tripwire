@@ -119,6 +119,15 @@ export const UpsellPermitPackage: React.FC = () => {
                 <p className="text-center text-slate-400 text-xs mt-8 max-w-lg mx-auto">
                     By clicking "Upgrade", you join the monthly membership. You can cancel anytime. Engineering services for specific plans are billed separately with member discounts.
                 </p>
+
+                <footer className="mt-12 text-center text-slate-400 text-xs border-t border-slate-200 pt-8">
+                    <p className="mb-4">&copy; {new Date().getFullYear()} Texas Structural Engineers, LLC. All rights reserved.</p>
+                    <div className="flex justify-center gap-6">
+                        <a href="https://www.quigig.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition-colors">Privacy Policy</a>
+                        <a href="https://www.quigig.com/terms-of-use/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition-colors">Terms of Service</a>
+                        <a href="mailto:support@quiplans.com" className="hover:text-slate-600 transition-colors">Support</a>
+                    </div>
+                </footer>
             </div >
         </div >
     );
