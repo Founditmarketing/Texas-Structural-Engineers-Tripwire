@@ -432,57 +432,33 @@ export const Home: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="bg-slate-900 text-white p-8 rounded-xl shadow-lg border border-slate-700 inline-block text-left w-full max-w-4xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 p-4 opacity-10">
-                            <ShieldCheck className="w-32 h-32 text-white" />
-                        </div>
-
-                        <div className="relative z-10">
-                            <div className="flex items-center gap-3 mb-6 border-b border-slate-700 pb-4">
-                                <ShieldCheck className="w-8 h-8 text-safety-orange" />
-                                <h3 className="text-2xl font-bold">For Builder Members (Premium Access)</h3>
+                    <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 inline-block text-left max-w-4xl w-full">
+                        <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">Planning to Build? We Also Provide:</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <span className="font-semibold text-slate-800">Signed & Sealed Structural Plans</span>
                             </div>
-
-                            <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
-                                <div className="space-y-4">
-                                    <li className="flex items-start gap-3 list-none">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
-                                        <span className="text-slate-300"><strong>Immediate Access:</strong> All floor plans in both PDF and Revit formats.</span>
-                                    </li>
-                                    <li className="flex items-start gap-3 list-none">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
-                                        <span className="text-slate-300"><strong>Fresh Content:</strong> Exclusive 5+ new custom plans added monthly (homes, ADUs, additions).</span>
-                                    </li>
-                                    <li className="flex items-start gap-3 list-none">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
-                                        <span className="text-slate-300"><strong>Weekly Live Q&A:</strong> With Dr. Mir Emad Mousavi covering permitting, development strategy, and compliance.</span>
-                                    </li>
-                                </div>
-                                <div className="space-y-4">
-                                    <li className="flex items-start gap-3 list-none">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
-                                        <span className="text-slate-300"><strong>Engineering Discounts:</strong> Discounted signed & sealed structural and MEP engineering plans.</span>
-                                    </li>
-                                    <li className="flex items-start gap-3 list-none">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
-                                        <span className="text-slate-300"><strong>Expert Guidance:</strong> Support on permitting strategy and compliance challenges.</span>
-                                    </li>
-                                    <li className="flex items-start gap-3 list-none">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
-                                        <span className="text-slate-300"><strong>Priority Access:</strong> Direct communication and member-only engineering insights.</span>
-                                    </li>
-                                </div>
+                            <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <span className="font-semibold text-slate-800">MEP Design Packages</span>
                             </div>
-
-                            <div className="mt-8 text-center">
-                                <button
-                                    onClick={scrollToPricing}
-                                    className="bg-safety-orange hover:bg-safety-orange-hover text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all inline-flex items-center gap-2"
-                                >
-                                    Join the Builder Membership <ArrowRight className="w-5 h-5" />
-                                </button>
+                            <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <span className="font-semibold text-slate-800">Site Development Plans</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <span className="font-semibold text-slate-800">Drainage & Grading</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg col-span-full md:col-span-2 lg:col-span-2 justify-center">
+                                <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <span className="font-semibold text-slate-800">Permit-Ready Engineering</span>
                             </div>
                         </div>
+                        <p className="text-center text-slate-500 text-sm mt-8 font-medium bg-slate-100 py-3 rounded-full inline-block px-8 mx-auto table">
+                            Start with the plans. Upgrade when you're ready.
+                        </p>
                     </div>
                 </div>
             </section>
