@@ -377,7 +377,7 @@ export const Home: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
-                                        <span>Member-only engineering discounts</span>
+                                        <span>Members only 15% off engineering discount</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
