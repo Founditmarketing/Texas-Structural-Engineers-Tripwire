@@ -378,7 +378,7 @@ export const Home: React.FC = () => {
 
                             <div className="flex flex-col gap-4">
                                 <button
-                                    onClick={handleBuyClick}
+                                    onClick={handleInstantAccessClick}
                                     className="w-full bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                                 >
                                     <span className="group-hover:scale-105 transition-transform">Get Instant Access Now — $99</span>
