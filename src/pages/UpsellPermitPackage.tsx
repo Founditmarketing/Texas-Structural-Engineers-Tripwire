@@ -102,10 +102,6 @@ export const UpsellPermitPackage: React.FC = () => {
                                 </li>
                             </ul>
 
-                            </div>
-                        </div>
-
-                        {/* REMOVED: Configuration Form (Not needed for membership upsell) */}
                         </div>
 
                         {error && (
