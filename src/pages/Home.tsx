@@ -97,16 +97,16 @@ export const Home: React.FC = () => {
                     {/* Feature Row */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8 border-t border-slate-700/50 pt-8">
                         <div className="flex items-center justify-center gap-3 text-slate-300">
-                            <Clock className="w-6 h-6 text-safety-orange" />
-                            <span className="text-lg font-bold text-white">Fast 30-Day Build</span>
+                            <span className="text-2xl">⚡</span>
+                            <span className="text-lg font-bold text-white">Download in Seconds</span>
                         </div>
                         <div className="flex items-center justify-center gap-3 text-slate-300">
-                            <Wallet className="w-6 h-6 text-safety-orange" />
-                            <span className="text-lg font-bold text-white">Under $40k Budget</span>
+                            <span className="text-2xl">📐</span>
+                            <span className="text-lg font-bold text-white">Permit-Ready & Inspector-Friendly</span>
                         </div>
                         <div className="flex items-center justify-center gap-3 text-slate-300">
-                            <TrendingUp className="w-6 h-6 text-safety-orange" />
-                            <span className="text-lg font-bold text-white">Passive Income Ready</span>
+                            <span className="text-2xl">💰</span>
+                            <span className="text-lg font-bold text-white">Save $5,000–$20,000 vs. Custom Design</span>
                         </div>
                     </div>
                 </div>
