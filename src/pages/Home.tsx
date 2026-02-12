@@ -285,57 +285,7 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
-            {/* 6.5 Complete Portfolio Preview */}
-            {/* 6.5 The Engineer's Vault (Moved Down) */}
-            <section className="py-20 bg-slate-50">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-sm font-bold tracking-widest text-safety-orange uppercase mb-3">Introducing</h2>
-                    <h3 className="text-4xl font-bold text-slate-900 mb-8">The Engineer's Vault</h3>
-                    <p className="max-w-2xl mx-auto text-slate-600 mb-12 text-lg">
-                        We opened our firm's archive of approved tiny house projects. You get the exact same blueprints we charged custom clients $3,500+ to create.
-                    </p>
 
-                    {/* Visual Mockup Area */}
-                    <div className="relative max-w-5xl mx-auto mb-16">
-                        <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-hidden relative">
-                            {/* Decorative "blueprint" grid background */}
-                            <div className="absolute inset-0 opacity-10 pointer-events-none"
-                                style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
-                            </div>
-
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
-                                {/* Floorplan cards */}
-                                {[
-                                    { name: 'Plan #1: Studio', path: '/floorplans/1-3DPLAN.jpg' },
-                                    { name: 'Plan #2: One-Bedroom', path: '/floorplans/2-3DPLAN.jpg' },
-                                    { name: 'Plan #3: Modern Loft', path: '/floorplans/3-3DPLAN.jpg' },
-                                    { name: 'Plan #4: Family Cabin', path: '/floorplans/4-3DPLAN.jpg' }
-                                ].map((plan, i) => (
-                                    <div key={i} className="bg-white border border-slate-200 p-3 rounded shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center">
-                                        <div className="w-full aspect-[3/4] bg-slate-100 border-2 border-slate-200 mb-3 flex flex-col justify-center items-center relative overflow-hidden rounded group">
-                                            <img
-                                                src={plan.path}
-                                                alt={plan.name}
-                                                className="w-full h-full object-cover blur-[2px] transition-all duration-300 group-hover:blur-[1px]"
-                                            />
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-slate-900/50 font-black text-lg -rotate-45 select-none border-2 border-slate-900/50 px-2 py-1">PREVIEW ONLY</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-slate-900 text-xs font-bold">{plan.name}</p>
-                                        <p className="text-safety-orange text-[10px] uppercase tracking-wider font-bold">Engineer Approved</p>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="mt-8 relative z-10 border-t border-slate-700 pt-6">
-                                <h4 className="font-bold text-white text-xl mb-2">30 Complete Sets Included</h4>
-                                <p className="text-slate-400 text-sm">Includes: Floor Plans, Framing Schedules, Foundation Plans, Roof Logic, Connection Details.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* 7. The Stack (Offer) */}
             <section id="pricing-stack" className="py-20 bg-slate-900 text-white relative overflow-hidden">
