@@ -1,13 +1,34 @@
 import React from 'react';
 import { ArrowLeft, CheckCircle2, Lock, ShieldCheck, CreditCard } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 export const Checkout: React.FC = () => {
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const planType = searchParams.get('plan') || 'drip'; // default to drip (Starter)
+
+    const isMembership = planType === 'instant';
+
+    const product = isMembership ? {
+        name: "Private Builder Membership",
+        subtitle: "Monthly Access to All Plans & Engineering Support",
+        price: 129.00,
+        originalPrice: 5000.00, // Arbitrary anchor
+        isRecurring: true,
+        features: ["Instant Access", "Weekly Q&A", "Permit Library"]
+    } : {
+        name: "Builder Starter Bundle",
+        subtitle: "One-Time Purchase: 30 Professional Floor Plans",
+        price: 39.00,
+        originalPrice: 3100.00,
+        isRecurring: false,
+        features: ["30 Floor Plans", "Delivered Instantly", "Room Dimensions"]
+    };
 
     const handlePayment = () => {
         // Placeholder for Stripe Payment Link redirection
-        // window.location.href = 'YOUR_STRIPE_PAYMENT_LINK';
+        // In a real app, this would redirect to different Stripe links based on `planType`
+        // window.location.href = isMembership ? 'STRIPE_LINK_MEMBERSHIP' : 'STRIPE_LINK_STARTER';
         navigate('/upsell-permit'); // Redirect to first upsell
     };
 
@@ -37,16 +58,18 @@ export const Checkout: React.FC = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-lg text-slate-900">The Engineer's Vault: 30-Plan Bundle</h3>
-                                    <p className="text-slate-500 text-sm mb-2">Complete Tiny House Architectural & Structural Set</p>
+                                    <h3 className="font-bold text-lg text-slate-900">{product.name}</h3>
+                                    <p className="text-slate-500 text-sm mb-2">{product.subtitle}</p>
                                     <div className="flex gap-2 text-xs text-green-600 font-semibold bg-green-50 px-2 py-1 rounded inline-block">
                                         <CheckCircle2 className="w-3 h-3" />
                                         <span>In Stock & Ready for Download</span>
                                     </div>
                                 </div>
                                 <div className="ml-auto text-right">
-                                    <p className="font-bold text-xl text-slate-900">$30.00</p>
-                                    <p className="text-slate-400 line-through text-sm">$3,100.00</p>
+                                    <p className="font-bold text-xl text-slate-900">
+                                        ${product.price}{product.isRecurring && <span className="text-base font-normal text-slate-500">/mo</span>}
+                                    </p>
+                                    <p className="text-slate-400 line-through text-sm">${product.originalPrice.toLocaleString()}</p>
                                 </div>
                             </div>
                         </div>
@@ -78,15 +101,17 @@ export const Checkout: React.FC = () => {
                         <div className="bg-white p-6 rounded-xl shadow-lg border border-slate-200 sticky top-4">
                             <div className="flex items-center justify-between mb-4">
                                 <span className="text-slate-600">Original Price</span>
-                                <span className="text-slate-400 line-through">$3,100.00</span>
+                                <span className="text-slate-400 line-through">${product.originalPrice.toLocaleString()}</span>
                             </div>
                             <div className="flex items-center justify-between mb-4 text-green-600">
                                 <span>Discount</span>
-                                <span>-$3,070.00</span>
+                                <span>-${(product.originalPrice - product.price).toLocaleString()}</span>
                             </div>
                             <div className="border-t border-slate-100 pt-4 mb-6 flex items-center justify-between">
-                                <span className="font-bold text-slate-900 text-lg">Total</span>
-                                <span className="font-black text-2xl text-slate-900">$30.00</span>
+                                <span className="font-bold text-slate-900 text-lg">{product.isRecurring ? 'Monthly Total' : 'Total'}</span>
+                                <span className="font-black text-2xl text-slate-900">
+                                    ${product.price}{product.isRecurring && <span className="text-lg font-normal text-slate-500">/mo</span>}
+                                </span>
                             </div>
 
                             <button
