@@ -54,17 +54,19 @@ export const Home: React.FC = () => {
                 <div className="absolute inset-0 z-0 bg-gradient-to-b from-slate-900/80 to-slate-900"></div>
 
                 <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 max-w-5xl text-center">
-                    <div className="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 px-4 py-1.5 rounded-full text-sm font-semibold text-safety-orange mb-6">
-                        <ShieldCheck className="w-4 h-4" />
-                        <span>Licensed Professional Engineer Verified</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700 mb-8 animate-fadeIn">
+                        <span className="w-2 h-2 rounded-full bg-safety-orange animate-pulse"></span>
+                        <span className="text-sm font-medium text-slate-300 tracking-wide uppercase">Licensed in 26 States</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                        Build a Debt-Free Tiny Home in <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">30 Days</span> with <br className="hidden md:block" /> 30 Architectural Plans for <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">$30.</span>
+                        Builder Planning Kit by a <br className="hidden md:block" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">Multi-State Licensed Engineering Firm</span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        Stop renting and start owning. Get 30 Engineer-Designed, City-Ready house plans that make building simple, safe, and affordable.
+                        Stop buying cheap plans from designers who can't sign off on your permit.
+                        Get the planning kit that sets you up for <span className="text-white font-bold decoration-safety-orange underline decoration-4 underline-offset-4">real construction</span>.
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
@@ -72,7 +74,7 @@ export const Home: React.FC = () => {
                             onClick={scrollToPricing}
                             className="bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-200 animate-pulse-fast flex items-center gap-3"
                         >
-                            Get the 30-Plan Bundle – $30
+                            Get the Builder Kit – Starting at $39
                             <ArrowRight className="w-6 h-6" />
                         </button>
                         <p className="text-slate-400 text-sm mt-2 md:mt-0">
@@ -339,20 +341,49 @@ export const Home: React.FC = () => {
                                 <span className="text-2xl font-bold text-slate-400 line-through decoration-red-500">$3,100</span>
                             </div>
 
-                            <div className="flex items-center justify-between mb-8">
-                                <div>
-                                    <span className="block text-xl font-bold text-slate-900">Today's Price</span>
-                                    <span className="text-xs text-slate-400 font-medium">Single plans also available for $17</span>
+                            <div className="space-y-6 mb-8">
+                                {/* Option A: $39 Drip */}
+                                <div className="border-2 border-slate-200 rounded-lg p-4 hover:border-safety-orange transition-colors cursor-pointer group bg-slate-50">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center group-hover:border-safety-orange">
+                                                <div className="w-3 h-3 rounded-full bg-safety-orange opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                            </div>
+                                            <span className="font-bold text-slate-900 text-lg">Option A: Drip Access</span>
+                                        </div>
+                                        <span className="font-black text-2xl text-slate-900">$39</span>
+                                    </div>
+                                    <p className="text-sm text-slate-500 ml-9">30 Plans delivered over 30 days. Perfect for daily inspiration.</p>
                                 </div>
-                                <span className="text-6xl font-black text-safety-orange">$30</span>
+
+                                {/* Option B: $99 Instant */}
+                                <div className="border-2 border-safety-orange bg-orange-50/50 rounded-lg p-4 relative cursor-pointer shadow-sm">
+                                    <div className="absolute -top-3 right-4 bg-safety-orange text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
+                                        RECOMMENDED FOR BUILDERS
+                                    </div>
+                                    <div className="flex items-center justify-between mb-2">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-6 h-6 rounded-full border-2 border-safety-orange flex items-center justify-center bg-white">
+                                                <div className="w-3 h-3 rounded-full bg-safety-orange"></div>
+                                            </div>
+                                            <span className="font-bold text-slate-900 text-lg">Option B: Builder Bundle</span>
+                                        </div>
+                                        <span className="font-black text-2xl text-safety-orange">$99</span>
+                                    </div>
+                                    <ul className="text-sm text-slate-700 ml-9 space-y-1">
+                                        <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-green-600" /> <strong>Instant Access</strong> to All 30 Plans</li>
+                                        <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-green-600" /> <strong>Bonus:</strong> Build Guide Included</li>
+                                        <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-green-600" /> Priority Support</li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <button
                                 onClick={handleBuyClick}
-                                className="w-full bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 group transition-colors mb-4"
+                                className="w-full bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                             >
-                                <Lock className="w-5 h-5" />
-                                <span>Secure My Plans Now</span>
+                                <span className="group-hover:scale-105 transition-transform">Get Instant Access Now – $99</span>
+                                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                             </button>
 
                             <div className="flex items-center justify-center gap-4 text-xs text-slate-400 border-t border-slate-100 pt-4">
