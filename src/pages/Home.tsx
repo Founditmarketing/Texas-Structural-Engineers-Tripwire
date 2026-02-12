@@ -65,14 +65,14 @@ export const Home: React.FC = () => {
                     </div>
 
                     <h1 className="font-extrabold tracking-tight mb-6 leading-tight">
-                        <span className="text-4xl md:text-6xl block mb-2 text-white">30 Modern Floor Plans</span>
+                        <span className="text-4xl md:text-6xl block mb-2 text-white">Build Smarter. Get 30 Modern Home & ADU Floor Plans</span>
                         <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500 block">
                             Designed by a Multi-State Licensed Engineering Firm
                         </span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        From 200 sq ft ADUs to 5,000 sq ft custom homes. Professionally drafted layouts trusted by builders nationwide.
+                        From 400 sq ft ADUs to 5,000 sq ft custom homes — start planning today with professionally drafted layouts trusted by builders nationwide.
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
@@ -115,10 +115,9 @@ export const Home: React.FC = () => {
             {/* 3. The Problem */}
             <section className="py-16 bg-slate-50">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-6">Most Homeowners Start With Pinterest…<br />Then Discover Permits Are a Different World.</h2>
+                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-6">Most Homeowners Start With Pinterest…<br />Then Hit a Permit Wall.</h2>
                     <p className="text-center text-slate-600 mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
-                        Design inspiration is easy. Permit approval is not.<br />
-                        If you’re planning to build, expand, or develop — understanding compliance early saves time, money, and costly redesigns.
+                        What many people don’t realize:
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -135,7 +134,7 @@ export const Home: React.FC = () => {
                                     <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
                                     <div>
                                         <h3 className="font-bold text-lg text-slate-900">Engineering Conditions Vary by Location</h3>
-                                        <p className="text-slate-600">Wind speeds, seismic zones, soil types, and foundation requirements differ significantly by region — and must be addressed by project-specific engineering.</p>
+                                        <p className="text-slate-600">Wind speeds, seismic zones, soil types, and foundation requirements differ significantly by region.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
@@ -150,7 +149,6 @@ export const Home: React.FC = () => {
                                     <div>
                                         <h3 className="font-bold text-lg text-slate-900">Incomplete Submissions Get Delayed or Rejected</h3>
                                         <p className="text-slate-600">
-                                            Submitting architectural layouts alone often results in revisions, delays, and additional costs.
                                             If you’re serious about building, you need more than inspiration. You need a path to permit approval.
                                         </p>
                                     </div>
@@ -287,90 +285,124 @@ export const Home: React.FC = () => {
 
 
 
-            {/* 7. The Stack (Offer) */}
+            {/* 7. The Stack (Offer Comparison) */}
             <section id="pricing-stack" className="py-20 bg-slate-900 text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-800 to-slate-950"></div>
 
                 <div className="container relative z-10 mx-auto px-4">
-                    <div className="max-w-lg mx-auto bg-white text-slate-900 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ring-4 ring-safety-orange/20">
-                        <div className="bg-safety-orange p-4 text-center">
-                            <span className="text-white font-bold tracking-wider text-sm flex items-center justify-center gap-2">
-                                <AlertTriangle className="w-4 h-4" />
-                                LIMITED TIME TRIPWIRE OFFER
-                            </span>
+                    <h2 className="text-3xl font-bold text-center mb-12">Choose Your Planning Path</h2>
+
+                    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        {/* Option 1 - Builder Starter */}
+                        <div className="bg-white text-slate-900 rounded-2xl shadow-xl overflow-hidden border-2 border-slate-200 transform hover:scale-[1.02] transition-transform duration-300">
+                            <div className="p-8">
+                                <div className="flex items-center gap-2 mb-4">
+                                    <Clock className="w-6 h-6 text-slate-500" />
+                                    <h3 className="text-2xl font-bold text-slate-800">Builder Starter</h3>
+                                </div>
+                                <div className="flex items-baseline gap-1 mb-2">
+                                    <span className="text-4xl font-black text-slate-900">$39</span>
+                                    <span className="text-slate-500 font-bold">One-Time</span>
+                                </div>
+                                <p className="text-slate-600 mb-8 h-12">Perfect if you're exploring ideas or early in planning.</p>
+
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                                        <span>30 professionally drafted floor plans</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                                        <span>Delivered over 30 days</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                                        <span>Room dimensions included</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                                        <span>Multiple size ranges</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                                        <span>Upgrade opportunities available</span>
+                                    </li>
+                                </ul>
+
+                                <button
+                                    onClick={handleBuyClick}
+                                    className="w-full bg-slate-200 hover:bg-slate-300 text-slate-900 font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                                >
+                                    Get 30 Plans for $39
+                                </button>
+                            </div>
                         </div>
 
-                        <div className="p-8">
-                            <h2 className="text-3xl font-bold text-center mb-8">Choose Your Planning Kit</h2>
-
-                            <div className="overflow-x-auto">
-                                <table className="w-full text-left border-collapse mb-8">
-                                    <thead>
-                                        <tr>
-                                            <th className="p-4 border-b border-slate-200">Option</th>
-                                            <th className="p-4 border-b border-slate-200">Delivery</th>
-                                            <th className="p-4 border-b border-slate-200">Best For</th>
-                                            <th className="p-4 border-b border-slate-200 text-right">Price</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                                            <td className="p-4 font-bold text-slate-900">
-                                                <div className="flex items-center gap-2">
-                                                    <Clock className="w-4 h-4 text-slate-400" />
-                                                    Builder Starter
-                                                </div>
-                                            </td>
-                                            <td className="p-4 text-slate-600 text-sm">30 days</td>
-                                            <td className="p-4 text-slate-600 text-sm">Early Planners</td>
-                                            <td className="p-4 text-right font-bold text-slate-900">$39</td>
-                                        </tr>
-                                        <tr className="bg-orange-50/50 border-2 border-safety-orange relative">
-                                            <td className="p-4 font-bold text-slate-900">
-                                                <div className="absolute -top-3 left-4 bg-safety-orange text-white text-[10px] font-bold px-2 py-0.5 rounded">MOST POPULAR</div>
-                                                <div className="flex items-center gap-2">
-                                                    <ShieldCheck className="w-4 h-4 text-green-600" />
-                                                    Builder Membership
-                                                </div>
-                                            </td>
-                                            <td className="p-4 text-slate-600 text-sm"><strong>Instant + Updates</strong></td>
-                                            <td className="p-4 text-slate-600 text-sm">Active Builders</td>
-                                            <td className="p-4 text-right font-black text-safety-orange text-xl">$129/mo</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        {/* Option 2 - Private Builder Engineering Membership */}
+                        <div className="bg-white text-slate-900 rounded-2xl shadow-2xl overflow-hidden border-4 border-safety-orange relative transform hover:scale-[1.03] transition-transform duration-300">
+                            <div className="absolute top-0 right-0 bg-safety-orange text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                                Most Popular for Active Builders
                             </div>
+                            <div className="p-8">
+                                <div className="flex items-center gap-2 mb-4">
+                                    <ShieldCheck className="w-6 h-6 text-safety-orange" />
+                                    <h3 className="text-2xl font-bold text-slate-800">Private Builder Membership</h3>
+                                </div>
+                                <div className="flex items-baseline gap-1 mb-2">
+                                    <span className="text-4xl font-black text-safety-orange">$129</span>
+                                    <span className="text-slate-400 font-bold text-lg">/month</span>
+                                </div>
+                                <p className="text-slate-600 mb-8 h-12">For serious builders who want guidance and compliance confidence.</p>
 
-                            <div className="flex flex-col gap-4">
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span className="font-bold">Instant access to all 30 plans</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span>DWG files included</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span>5 new custom plans added monthly</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span className="font-bold">Weekly 2-hour Live Q&A with Dr. Mousavi</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span>Permit education library</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span>Member-only engineering discounts</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                        <span>Priority support</span>
+                                    </li>
+                                </ul>
+
                                 <button
                                     onClick={handleInstantAccessClick}
                                     className="w-full bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                                 >
-                                    <span className="group-hover:scale-105 transition-transform">Join the Builder Membership — $129/mo</span>
-                                    <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-                                </button>
-                                <button
-                                    onClick={handleBuyClick}
-                                    className="w-full bg-transparent border-2 border-slate-200 text-slate-400 hover:text-slate-600 hover:border-slate-400 font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm"
-                                >
-                                    I prefer the 30-day starter pack for $39
+                                    Join the Builder Membership <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </div>
+                        </div>
+                    </div>
 
-                            <div className="flex items-center justify-center gap-4 text-xs text-slate-400 border-t border-slate-100 pt-4">
-                                <div className="flex items-center gap-1">
-                                    <Shield className="w-3 h-3" />
-                                    <span>SSL Secure Payment</span>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                    <Shield className="w-3 h-3" />
-                                    <span>SSL Secure Payment</span>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                    <CreditCard className="w-3 h-3" />
-                                    <span>Secure Processing</span>
-                                </div>
-                            </div>
+                    <div className="flex items-center justify-center gap-6 text-xs text-slate-400 mt-12 max-w-2xl mx-auto">
+                        <div className="flex items-center gap-2">
+                            <Shield className="w-4 h-4" />
+                            <span>SSL Secure Payment</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <CreditCard className="w-4 h-4" />
+                            <span>Secure Processing</span>
                         </div>
                     </div>
                 </div>

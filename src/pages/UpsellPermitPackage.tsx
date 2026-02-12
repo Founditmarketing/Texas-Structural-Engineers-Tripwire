@@ -86,19 +86,19 @@ export const UpsellPermitPackage: React.FC = () => {
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Instant Access</strong> to DWG Files.</span>
+                                    <span className="text-slate-700"><strong>Instant Access</strong> to DWG files.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Weekly Live Q&A</strong> with Dr. Mousavi.</span>
+                                    <span className="text-slate-700"><strong>Weekly live Q&A</strong> with Dr. Mousavi.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Permit Education</strong> Library.</span>
+                                    <span className="text-slate-700"><strong>Permit education</strong> library.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Member-Only</strong> Engineering Discounts.</span>
+                                    <span className="text-slate-700"><strong>Engineering discounts</strong> for members.</span>
                                 </li>
                             </ul>
 
