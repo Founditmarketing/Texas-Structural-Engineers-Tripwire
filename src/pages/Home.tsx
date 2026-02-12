@@ -115,37 +115,44 @@ export const Home: React.FC = () => {
             {/* 3. The Problem */}
             <section className="py-16 bg-slate-50">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Most Homeowners Start With Pinterest… Then Hit a Permit Wall.</h2>
+                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-6">Most Homeowners Start With Pinterest…<br />Then Discover Permits Are a Different World.</h2>
+                    <p className="text-center text-slate-600 mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
+                        Design inspiration is easy. Permit approval is not.<br />
+                        If you’re planning to build, expand, or develop — understanding compliance early saves time, money, and costly redesigns.
+                    </p>
 
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
-                            <ul className="space-y-6">
+                            <ul className="space-y-8">
                                 <li className="flex items-start gap-4">
                                     <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="font-bold text-lg text-slate-900">Signed & Sealed Plans Required</h3>
-                                        <p className="text-slate-600">Most counties require signed & sealed structural plans before issuing a permit.</p>
+                                        <h3 className="font-bold text-lg text-slate-900">Signed & Sealed Plans Are Often Required</h3>
+                                        <p className="text-slate-600">Most jurisdictions require licensed structural calculations and stamped drawings before issuing a building permit.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="font-bold text-lg text-slate-900">Conditions Vary by Location</h3>
-                                        <p className="text-slate-600">Wind, seismic, and soil conditions vary significantly by location and require specific engineering.</p>
+                                        <h3 className="font-bold text-lg text-slate-900">Engineering Conditions Vary by Location</h3>
+                                        <p className="text-slate-600">Wind speeds, seismic zones, soil types, and foundation requirements differ significantly by region — and must be addressed by project-specific engineering.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="font-bold text-lg text-slate-900">Mandatory Drainage Plans</h3>
-                                        <p className="text-slate-600">Drainage and grading requirements are frequently mandatory.</p>
+                                        <h3 className="font-bold text-lg text-slate-900">Drainage & Grading Plans Are Frequently Mandatory</h3>
+                                        <p className="text-slate-600">Many municipalities require drainage studies, grading plans, and site layouts before approving construction.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
-                                    <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
+                                    <XCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="font-bold text-lg text-slate-900">Incomplete Plans Rejected</h3>
-                                        <p className="text-slate-600">If you’re serious about building, you need more than inspiration. You need a path to permit approval.</p>
+                                        <h3 className="font-bold text-lg text-slate-900">Incomplete Submissions Get Delayed or Rejected</h3>
+                                        <p className="text-slate-600">
+                                            Submitting architectural layouts alone often results in revisions, delays, and additional costs.
+                                            If you’re serious about building, you need more than inspiration. You need a path to permit approval.
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
@@ -153,7 +160,7 @@ export const Home: React.FC = () => {
 
                         <div className="relative">
                             <div className="bg-white p-6 rounded-xl shadow-lg border border-slate-200">
-                                <h3 className="font-bold text-slate-900 mb-4 text-xl">What You Get in The Vault</h3>
+                                <h3 className="font-bold text-slate-900 mb-4 text-xl">What You Get Inside the Builder Vault</h3>
                                 <ul className="space-y-3 mb-6">
                                     <li className="flex items-center gap-3 text-slate-700">
                                         <CheckCircle2 className="w-5 h-5 text-green-600" /> Architectural Floor Plan PDFs
@@ -162,18 +169,23 @@ export const Home: React.FC = () => {
                                         <CheckCircle2 className="w-5 h-5 text-green-600" /> Detailed Room Dimensions
                                     </li>
                                     <li className="flex items-center gap-3 text-slate-700">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600" /> Layout Concepts
+                                        <CheckCircle2 className="w-5 h-5 text-green-600" /> Thoughtful Layout Concepts
                                     </li>
                                     <li className="flex items-center gap-3 text-slate-700">
                                         <CheckCircle2 className="w-5 h-5 text-green-600" /> Elevation Views
                                     </li>
                                     <li className="flex items-center gap-3 text-slate-700">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600" /> Planning Inspiration
+                                        <CheckCircle2 className="w-5 h-5 text-green-600" /> Modern Design Inspiration
                                     </li>
                                 </ul>
-                                <p className="text-xs text-slate-500 italic border-t border-slate-100 pt-4">
-                                    Note: Structural and permit-ready engineering is not included in the base bundle but is available as an upgrade.
+                                <p className="text-sm text-slate-600 mb-4 italic">
+                                    These plans are designed to help you explore, evaluate, and prepare for your building journey.
                                 </p>
+                                <div className="text-xs text-slate-500 bg-slate-50 p-3 rounded border border-slate-100">
+                                    <span className="font-bold text-slate-700 block mb-1">Important:</span>
+                                    The base bundle includes architectural layouts only.
+                                    Signed & sealed structural, MEP, and site-specific permit-ready engineering services are available as optional upgrades through our licensed engineering team.
+                                </div>
                             </div>
                         </div>
                     </div>
