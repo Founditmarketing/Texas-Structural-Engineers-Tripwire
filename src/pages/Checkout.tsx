@@ -11,25 +11,25 @@ export const Checkout: React.FC = () => {
 
     const product = isMembership ? {
         name: "Private Builder Membership",
-        subtitle: "Monthly Access to All Plans & Engineering Support",
+        subtitle: "Private access to engineering-backed home design resources and live guidance for serious builders, homeowners, and developers.",
         price: 129.00,
         originalPrice: 5000.00, // Arbitrary anchor
         isRecurring: true,
-        features: ["Instant Access", "Weekly Q&A", "Permit Regulation Updates", "Private Chat Group"]
+        features: ["Instant Access", "Weekly Q&A", "Permit Regulation Updates", "Private Chat Group"],
+        paymentLink: "https://buy.stripe.com/00w7sN0gi0IebsEblB1gs01"
     } : {
         name: "Builder Starter Bundle",
-        subtitle: "One-Time Purchase: 30 Professional Floor Plans",
+        subtitle: "Get instant access to a curated collection of 30 professionally designed residential floor plans.",
         price: 39.00,
         originalPrice: 3100.00,
         isRecurring: false,
-        features: ["30 Floor Plans", "Delivered Instantly", "Room Dimensions"]
+        features: ["30 Floor Plans", "Delivered Instantly", "Room Dimensions"],
+        paymentLink: "https://buy.stripe.com/3cIfZjaUWbmSaoAcpF1gs00"
     };
 
     const handlePayment = () => {
-        // Placeholder for Stripe Payment Link redirection
-        // In a real app, this would redirect to different Stripe links based on `planType`
-        // window.location.href = isMembership ? 'STRIPE_LINK_MEMBERSHIP' : 'STRIPE_LINK_STARTER';
-        navigate('/upsell-permit'); // Redirect to first upsell
+        // Redirect to the specific Stripe Payment Link based on plan selection
+        window.location.href = product.paymentLink;
     };
 
     return (
