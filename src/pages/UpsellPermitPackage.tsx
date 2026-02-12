@@ -50,16 +50,17 @@ export const UpsellPermitPackage: React.FC = () => {
 
                     <div className="p-8 md:p-12">
                         <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 leading-tight text-center">
-                            Do You Want These Plans <span className="text-red-600 underline decoration-4 underline-offset-4">Signed & Sealed</span> for Your Specific Lot?
+                            Important: These Plans Are <span className="text-red-600 underline decoration-4 underline-offset-4">Not Permit-Ready</span>
                         </h1>
                         <p className="text-lg text-slate-600 text-center mb-10 max-w-2xl mx-auto">
-                            The $30 bundle includes the design PDFs. But to get a <strong>Building Permit</strong>, your city will require a state-licensed engineer to seal the documents for your specific address.
+                            Most counties require signed & seals structural calculations before issuing permits.
+                            As a licensed engineering firm operating in 26 states, we can upgrade your selected plan to permit-ready structural drawings.
                         </p>
 
                         {/* The Offer Box */}
                         <div className="bg-slate-50 border-2 border-dashed border-slate-300 rounded-xl p-6 mb-10 relative">
                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-safety-orange text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-                                ONE-TIME OFFER: SAVE 70%
+                                LIMITED-TIME BUILDER UPGRADE
                             </div>
 
                             <div className="flex flex-col md:flex-row items-center gap-6 mb-8 mt-4">
@@ -85,19 +86,23 @@ export const UpsellPermitPackage: React.FC = () => {
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Foundation Plan</strong> designed for your soil conditions.</span>
+                                    <span className="text-slate-700"><strong>Structural Calculations</strong> included.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Structural Framing Plan</strong> with wind/snow load calcs.</span>
+                                    <span className="text-slate-700"><strong>Foundation Design</strong> for your site.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>MEP Plans</strong> (Mechanical, Electrical, Plumbing) included.</span>
+                                    <span className="text-slate-700"><strong>Wind / Seismic</strong> compliance.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Signed & Sealed</strong> by a State-Licensed Engineer.</span>
+                                    <span className="text-slate-700"><strong>Engineer Stamp</strong> (where licensed).</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-0.5" />
+                                    <span className="text-slate-700">Upgrade within <strong>72 hours</strong> for priority processing.</span>
                                 </li>
                             </ul>
 
@@ -201,7 +206,7 @@ export const UpsellPermitPackage: React.FC = () => {
                                 className="w-full bg-green-600 hover:bg-green-700 text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                             >
                                 <ShieldCheck className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                                <span>YES! Upgrade My Order for $950</span>
+                                <span>Upgrade My Plan for Permit Approval</span>
                             </button>
 
                             <button
