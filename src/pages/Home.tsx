@@ -65,12 +65,12 @@ export const Home: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                        Build Smarter. Get 30 Modern Home & ADU Floor Plans Designed by a <br className="hidden md:block" />
+                        30 Modern Floor Plans Designed by a <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">Multi-State Licensed Engineering Firm</span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        From 400 sq ft ADUs to 5,000 sq ft custom homes — start planning today with professionally drafted layouts trusted by builders nationwide.
+                        From 400 sq ft ADUs to 5,000 sq ft custom homes. Professionally drafted layouts trusted by builders nationwide.
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
