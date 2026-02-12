@@ -379,31 +379,91 @@ export const Home: React.FC = () => {
             {/* 7.5 Authority & Backend Transition */}
             <section className="py-16 bg-slate-50 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
-                    <div className="max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-6">Led by Dr. Mir Emad Mousavi, Ph.D., P.E.</h2>
-                        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
-                            <div className="text-left">
-                                <ul className="space-y-2 text-slate-600">
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-safety-orange" /> Multi-state licensed professional engineer</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-safety-orange" /> Thousands of completed residential projects</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-safety-orange" /> Operating across 26 U.S. states</li>
-                                </ul>
-                            </div>
+                    <div className="max-w-4xl mx-auto mb-16">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-8">Why Builders Choose Us</h2>
+                        <div className="grid md:grid-cols-2 gap-8 text-left">
+                            <ul className="space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                    <span className="text-slate-700"><strong>Licensed Engineering Firm:</strong> Designed and supported by Licensed Civil Engineers, Inc., with partners across 26 states.</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                    <span className="text-slate-700"><strong>Real-World Buildability:</strong> Layouts developed with structural feasibility and permitting requirements considered.</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                    <span className="text-slate-700"><strong>Professional Quality:</strong> Professionally drafted PDFs and 3D rendered visuals — not generic internet templates.</span>
+                                </li>
+                            </ul>
+                            <ul className="space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                    <span className="text-slate-700"><strong>For Everyone:</strong> Ideal for homeowners, contractors, and developers planning homes, ADUs, or additions.</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                    <span className="text-slate-700"><strong>Seamless Upgrades:</strong> Easy path to signed & sealed structural and MEP plans when ready for permit.</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-1" />
+                                    <span className="text-slate-700"><strong>Instant Access:</strong> Avoid weeks of waiting — download instantly and begin feasibility planning immediately.</span>
+                                </li>
+                            </ul>
                         </div>
-                        <p className="text-lg text-slate-600 italic">
-                            "When you're ready for permit-ready structural and MEP plans — you’re already in the right place."
-                        </p>
                     </div>
 
-                    <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 inline-block text-left">
-                        <h3 className="text-xl font-bold text-slate-900 mb-4 text-center">Planning to Build? We Also Provide:</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3">
-                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> Signed & Sealed Structural Plans</li>
-                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> MEP Design Packages</li>
-                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> Site Development Plans</li>
-                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> Drainage & Grading</li>
+                    <div className="bg-slate-900 text-white p-8 rounded-xl shadow-lg border border-slate-700 inline-block text-left w-full max-w-4xl relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-4 opacity-10">
+                            <ShieldCheck className="w-32 h-32 text-white" />
                         </div>
-                        <p className="text-center text-slate-500 text-sm mt-6 font-medium">Start with the plans. Upgrade when you're ready.</p>
+
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-6 border-b border-slate-700 pb-4">
+                                <ShieldCheck className="w-8 h-8 text-safety-orange" />
+                                <h3 className="text-2xl font-bold">For Builder Members (Premium Access)</h3>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
+                                <div className="space-y-4">
+                                    <li className="flex items-start gap-3 list-none">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                                        <span className="text-slate-300"><strong>Immediate Access:</strong> All floor plans in both PDF and Revit formats.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 list-none">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                                        <span className="text-slate-300"><strong>Fresh Content:</strong> Exclusive 5+ new custom plans added monthly (homes, ADUs, additions).</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 list-none">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                                        <span className="text-slate-300"><strong>Weekly Live Q&A:</strong> With Dr. Mir Emad Mousavi covering permitting, development strategy, and compliance.</span>
+                                    </li>
+                                </div>
+                                <div className="space-y-4">
+                                    <li className="flex items-start gap-3 list-none">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                                        <span className="text-slate-300"><strong>Engineering Discounts:</strong> Discounted signed & sealed structural and MEP engineering plans.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 list-none">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                                        <span className="text-slate-300"><strong>Expert Guidance:</strong> Support on permitting strategy and compliance challenges.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3 list-none">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-1" />
+                                        <span className="text-slate-300"><strong>Priority Access:</strong> Direct communication and member-only engineering insights.</span>
+                                    </li>
+                                </div>
+                            </div>
+
+                            <div className="mt-8 text-center">
+                                <button
+                                    onClick={scrollToPricing}
+                                    className="bg-safety-orange hover:bg-safety-orange-hover text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all inline-flex items-center gap-2"
+                                >
+                                    Join the Builder Membership <ArrowRight className="w-5 h-5" />
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
