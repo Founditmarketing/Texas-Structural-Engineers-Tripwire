@@ -4,21 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 export const UpsellPermitPackage: React.FC = () => {
     const navigate = useNavigate();
-    const [selectedPlan, setSelectedPlan] = useState<string>('');
-    const [address, setAddress] = useState<string>('');
-    const [error, setError] = useState<string>('');
-
     const handleAccept = () => {
-        if (!selectedPlan) {
-            setError('Please select a plan to proceed.');
-            return;
-        }
-        if (!address) {
-            setError('Please enter the property address for the engineer\'s seal.');
-            return;
-        }
-        // In a real app, we'd add this to the cart/order
-        navigate('/upsell-site');
+        window.location.href = 'https://sf.quigpro.com/quiplans/165672';
     };
 
     const handleDecline = () => {
@@ -50,10 +37,10 @@ export const UpsellPermitPackage: React.FC = () => {
 
                     <div className="p-8 md:p-12">
                         <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 leading-tight text-center">
-                            Important: These Plans Are Conceptual — <span className="text-red-600 underline decoration-4 underline-offset-4">Not Permit-Ready</span>
+                            Important: The Plans You Just Purchased Are Concepts Only — <span className="text-red-600 underline decoration-4 underline-offset-4">Not Permit-Ready</span>
                         </h1>
                         <p className="text-lg text-slate-600 text-center mb-10 max-w-2xl mx-auto">
-                            Most counties require signed & sealed structural calculations before issuing permits.
+                            Without signed & sealed structural engineering, your local building department will reject these plans. We can fix that.
                             As a licensed engineering firm operating in 26 states, we can guide you through compliance.
                         </p>
 
