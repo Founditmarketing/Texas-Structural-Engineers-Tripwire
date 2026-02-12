@@ -61,17 +61,16 @@ export const Home: React.FC = () => {
                 <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 max-w-5xl text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700 mb-8 animate-fadeIn">
                         <span className="w-2 h-2 rounded-full bg-safety-orange animate-pulse"></span>
-                        <span className="text-sm font-medium text-slate-300 tracking-wide uppercase">Licensed in 26 States</span>
+                        <span className="text-sm font-medium text-slate-300 tracking-wide uppercase">Licensed Professional Engineers in 26 U.S. States</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                        Build Your Dream Home the Right Way — 30 Modern Floor Plans Designed by a <br className="hidden md:block" />
+                        Build Smarter. Get 30 Modern Home & ADU Floor Plans Designed by a <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500">Multi-State Licensed Engineering Firm</span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        Stop buying cheap plans from designers who can't sign off on your permit.
-                        Get the planning kit that sets you up for <span className="text-white font-bold decoration-safety-orange underline decoration-4 underline-offset-4">real construction</span>.
+                        From 400 sq ft ADUs to 5,000 sq ft custom homes — start planning today with professionally drafted layouts trusted by builders nationwide.
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
@@ -79,13 +78,13 @@ export const Home: React.FC = () => {
                             onClick={scrollToPricing}
                             className="bg-transparent border-2 border-slate-500 hover:border-white text-slate-300 hover:text-white text-lg font-bold py-4 px-8 rounded-lg transition-all duration-200 flex items-center gap-3"
                         >
-                            Get 30 Plans for $39 (Delivered Daily)
+                            Get 30 Plans for $39
                         </button>
                         <button
                             onClick={scrollToPricing}
                             className="bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-200 animate-pulse-fast flex items-center gap-3"
                         >
-                            Instant Access — Download All 30 for $99
+                            Join the Private Builder Membership
                             <ArrowRight className="w-6 h-6" />
                         </button>
                     </div>
@@ -114,7 +113,7 @@ export const Home: React.FC = () => {
             {/* 3. The Problem */}
             <section className="py-16 bg-slate-50">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Planning to Build? Here’s What Most Homeowners Don’t Realize</h2>
+                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">Most Homeowners Start With Pinterest… Then Hit a Permit Wall.</h2>
 
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-6">
@@ -137,14 +136,14 @@ export const Home: React.FC = () => {
                                     <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
                                     <div>
                                         <h3 className="font-bold text-lg text-slate-900">Mandatory Drainage Plans</h3>
-                                        <p className="text-slate-600">Drainage and grading plans are often mandatory to prevent flooding and foundation issues.</p>
+                                        <p className="text-slate-600">Drainage and grading requirements are frequently mandatory.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <AlertTriangle className="w-6 h-6 text-safety-orange flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="font-bold text-lg text-slate-900">Avoid Delays</h3>
-                                        <p className="text-slate-600">Submitting incomplete plans can delay permits by months. Start with professional docs.</p>
+                                        <h3 className="font-bold text-lg text-slate-900">Incomplete Plans Rejected</h3>
+                                        <p className="text-slate-600">If you’re serious about building, you need more than inspiration. You need a path to permit approval.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -353,24 +352,24 @@ export const Home: React.FC = () => {
                                             <td className="p-4 font-bold text-slate-900">
                                                 <div className="flex items-center gap-2">
                                                     <Clock className="w-4 h-4 text-slate-400" />
-                                                    30-Day Builder Series
+                                                    Builder Starter
                                                 </div>
                                             </td>
-                                            <td className="p-4 text-slate-600 text-sm">1 per day</td>
-                                            <td className="p-4 text-slate-600 text-sm">Early planners</td>
+                                            <td className="p-4 text-slate-600 text-sm">30 days</td>
+                                            <td className="p-4 text-slate-600 text-sm">Early Planners</td>
                                             <td className="p-4 text-right font-bold text-slate-900">$39</td>
                                         </tr>
                                         <tr className="bg-orange-50/50 border-2 border-safety-orange relative">
                                             <td className="p-4 font-bold text-slate-900">
                                                 <div className="absolute -top-3 left-4 bg-safety-orange text-white text-[10px] font-bold px-2 py-0.5 rounded">MOST POPULAR</div>
                                                 <div className="flex items-center gap-2">
-                                                    <CheckCircle2 className="w-4 h-4 text-green-600" />
-                                                    Instant Builder Access
+                                                    <ShieldCheck className="w-4 h-4 text-green-600" />
+                                                    Builder Membership
                                                 </div>
                                             </td>
-                                            <td className="p-4 text-slate-600 text-sm"><strong>All 30 Now</strong></td>
-                                            <td className="p-4 text-slate-600 text-sm">Ready-to-build</td>
-                                            <td className="p-4 text-right font-black text-safety-orange text-xl">$99</td>
+                                            <td className="p-4 text-slate-600 text-sm"><strong>Instant + Updates</strong></td>
+                                            <td className="p-4 text-slate-600 text-sm">Active Builders</td>
+                                            <td className="p-4 text-right font-black text-safety-orange text-xl">$129/mo</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -381,14 +380,14 @@ export const Home: React.FC = () => {
                                     onClick={handleInstantAccessClick}
                                     className="w-full bg-safety-orange hover:bg-safety-orange-hover text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                                 >
-                                    <span className="group-hover:scale-105 transition-transform">Get Instant Access Now — $99</span>
+                                    <span className="group-hover:scale-105 transition-transform">Join the Builder Membership — $129/mo</span>
                                     <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                                 </button>
                                 <button
                                     onClick={handleBuyClick}
                                     className="w-full bg-transparent border-2 border-slate-200 text-slate-400 hover:text-slate-600 hover:border-slate-400 font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm"
                                 >
-                                    I prefer the 30-day drip for $39
+                                    I prefer the 30-day starter pack for $39
                                 </button>
                             </div>
 
@@ -403,6 +402,38 @@ export const Home: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 7.5 Authority & Backend Transition */}
+            <section className="py-16 bg-slate-50 border-b border-slate-200">
+                <div className="container mx-auto px-4 text-center">
+                    <div className="max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-6">Led by Dr. Mir Emad Mousavi, Ph.D., P.E.</h2>
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+                            <div className="text-left">
+                                <ul className="space-y-2 text-slate-600">
+                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-safety-orange" /> Multi-state licensed professional engineer</li>
+                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-safety-orange" /> Thousands of completed residential projects</li>
+                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-safety-orange" /> Operating across 26 U.S. states</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p className="text-lg text-slate-600 italic">
+                            "When you're ready for permit-ready structural and MEP plans — you’re already in the right place."
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 inline-block text-left">
+                        <h3 className="text-xl font-bold text-slate-900 mb-4 text-center">Planning to Build? We Also Provide:</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3">
+                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> Signed & Sealed Structural Plans</li>
+                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> MEP Design Packages</li>
+                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> Site Development Plans</li>
+                            <li className="flex items-center gap-2 text-slate-700 list-none"><CheckCircle2 className="w-4 h-4 text-green-600" /> Drainage & Grading</li>
+                        </div>
+                        <p className="text-center text-slate-500 text-sm mt-6 font-medium">Start with the plans. Upgrade when you're ready.</p>
                     </div>
                 </div>
             </section>

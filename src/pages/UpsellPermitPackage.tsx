@@ -50,17 +50,17 @@ export const UpsellPermitPackage: React.FC = () => {
 
                     <div className="p-8 md:p-12">
                         <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-4 leading-tight text-center">
-                            Important: These Plans Are <span className="text-red-600 underline decoration-4 underline-offset-4">Not Permit-Ready</span>
+                            Important: These Plans Are Conceptual — <span className="text-red-600 underline decoration-4 underline-offset-4">Not Permit-Ready</span>
                         </h1>
                         <p className="text-lg text-slate-600 text-center mb-10 max-w-2xl mx-auto">
-                            Most counties require signed & seals structural calculations before issuing permits.
-                            As a licensed engineering firm operating in 26 states, we can upgrade your selected plan to permit-ready structural drawings.
+                            Most counties require signed & sealed structural calculations before issuing permits.
+                            As a licensed engineering firm operating in 26 states, we can guide you through compliance.
                         </p>
 
                         {/* The Offer Box */}
                         <div className="bg-slate-50 border-2 border-dashed border-slate-300 rounded-xl p-6 mb-10 relative">
                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-safety-orange text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-                                LIMITED-TIME BUILDER UPGRADE
+                                SPECIAL OFFER: LOCK IN MEMBER ACCESS
                             </div>
 
                             <div className="flex flex-col md:flex-row items-center gap-6 mb-8 mt-4">
@@ -68,17 +68,17 @@ export const UpsellPermitPackage: React.FC = () => {
                                     <ShieldCheck className="w-16 h-16 text-slate-800" />
                                 </div>
                                 <div>
-                                    <h2 className="text-2xl font-bold text-slate-900">Signed & Sealed Engineering Package</h2>
+                                    <h2 className="text-2xl font-bold text-slate-900">Private Builder Engineering Membership</h2>
                                     <div className="flex items-center gap-1 mt-1 text-xs font-bold text-slate-500 uppercase tracking-wide">
                                         <ShieldCheck className="w-3 h-3 text-safety-orange" />
-                                        Licensed in 26 States
+                                        Led by Dr. Mir Emad Mousavi, P.E.
                                     </div>
                                     <div className="flex items-center gap-2 mt-1">
-                                        <span className="text-3xl font-black text-green-600">$950</span>
-                                        <span className="text-xl text-slate-400 line-through font-bold">$3,500</span>
+                                        <span className="text-3xl font-black text-green-600">$129/mo</span>
+                                        <span className="text-xl text-slate-400 font-bold">cancel anytime</span>
                                     </div>
                                     <p className="text-slate-500 text-sm mt-2">
-                                        Select ONE plan from your bundle. We will engineer it specifically for your lot and provide the signed & sealed documents you need for the city.
+                                        Upgrade to instant access for all 30 plans plus ongoing engineering support.
                                     </p>
                                 </div>
                             </div>
@@ -86,112 +86,26 @@ export const UpsellPermitPackage: React.FC = () => {
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Structural Calculations</strong> included.</span>
+                                    <span className="text-slate-700"><strong>Instant Access</strong> to DWG Files.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Foundation Design</strong> for your site.</span>
+                                    <span className="text-slate-700"><strong>Weekly Live Q&A</strong> with Dr. Mousavi.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Wind / Seismic</strong> compliance.</span>
+                                    <span className="text-slate-700"><strong>Permit Education</strong> Library.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700"><strong>Engineer Stamp</strong> (where licensed).</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-safety-orange flex-shrink-0 mt-0.5" />
-                                    <span className="text-slate-700">Upgrade within <strong>72 hours</strong> for priority processing.</span>
+                                    <span className="text-slate-700"><strong>Member-Only</strong> Engineering Discounts.</span>
                                 </li>
                             </ul>
 
-                            {/* Configuration Form */}
-                            <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
-                                <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                    <FileText className="w-4 h-4 text-safety-orange" />
-                                    Step 1: Select Your Plan
-                                </h3>
-
-                                {/* Visual Plan Selector */}
-                                <div className="mb-6">
-                                    <div className="text-sm text-slate-500 mb-2">Click a plan to select it:</div>
-                                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 max-h-60 overflow-y-auto p-2 border border-slate-200 rounded bg-slate-50">
-                                        {plans.map(plan => {
-                                            const isSelected = selectedPlan === plan.id.toString();
-                                            return (
-                                                <button
-                                                    key={plan.id}
-                                                    onClick={() => setSelectedPlan(plan.id.toString())}
-                                                    className={`relative aspect-square rounded overflow-hidden border-2 transition-all ${isSelected ? 'border-safety-orange ring-2 ring-safety-orange/30' : 'border-transparent hover:border-slate-300'}`}
-                                                >
-                                                    <img
-                                                        src={`/floorplans/${plan.id}-3DPLAN.jpg`} // Assuming standard naming convention
-                                                        alt={plan.name}
-                                                        className="w-full h-full object-cover"
-                                                        onError={(e) => {
-                                                            (e.target as HTMLImageElement).src = 'https://placehold.co/100x100?text=Plan+' + plan.id;
-                                                        }}
-                                                    />
-                                                    {isSelected && (
-                                                        <div className="absolute inset-0 bg-safety-orange/20 flex items-center justify-center">
-                                                            <CheckCircle2 className="w-6 h-6 text-white drop-shadow-md" />
-                                                        </div>
-                                                    )}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-
-                                {/* Selected Plan Preview */}
-                                {selectedPlan && (
-                                    <div className="mb-6 p-4 bg-slate-50 border border-slate-200 rounded flex gap-4 items-center animate-fadeIn">
-                                        <div className="w-20 h-20 bg-white rounded border border-slate-200 overflow-hidden flex-shrink-0">
-                                            <img
-                                                src={`/floorplans/${selectedPlan}-3DPLAN.jpg`}
-                                                alt="Selected Plan"
-                                                className="w-full h-full object-cover"
-                                                onError={(e) => {
-                                                    (e.target as HTMLImageElement).src = 'https://placehold.co/100x100?text=Plan+' + selectedPlan;
-                                                }}
-                                            />
-                                        </div>
-                                        <div>
-                                            <div className="text-xs text-slate-500 font-bold uppercase">Selected Plan</div>
-                                            <div className="font-bold text-slate-900">
-                                                Plan #{selectedPlan} - {plans.find(p => p.id.toString() === selectedPlan)?.name.split(' - ')[1]}
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-
-                                <select
-                                    value={selectedPlan}
-                                    onChange={(e) => setSelectedPlan(e.target.value)}
-                                    className="w-full border border-slate-300 rounded px-3 py-2 text-slate-900 mb-6 focus:ring-2 focus:ring-safety-orange focus:border-transparent outline-none"
-                                >
-                                    <option value="">-- Or select from list --</option>
-                                    {plans.map(plan => (
-                                        <option key={plan.id} value={plan.id}>{plan.name}</option>
-                                    ))}
-                                </select>
-
-                                <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                    <MapPin className="w-4 h-4 text-safety-orange" />
-                                    Step 2: Property Address
-                                </h3>
-                                <div className="space-y-4">
-                                    <p className="text-xs text-slate-500">Required for the engineer's seal. This must be the actual building location.</p>
-                                    <input
-                                        type="text"
-                                        value={address}
-                                        onChange={(e) => setAddress(e.target.value)}
-                                        placeholder="123 Main St, Austin, TX 78701"
-                                        className="w-full border border-slate-300 rounded px-3 py-2 text-slate-900 focus:ring-2 focus:ring-safety-orange focus:border-transparent outline-none"
-                                    />
-                                </div>
                             </div>
+                        </div>
+
+                        {/* REMOVED: Configuration Form (Not needed for membership upsell) */}
                         </div>
 
                         {error && (
@@ -206,7 +120,7 @@ export const UpsellPermitPackage: React.FC = () => {
                                 className="w-full bg-green-600 hover:bg-green-700 text-white text-xl font-bold py-5 rounded-lg shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 group"
                             >
                                 <ShieldCheck className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                                <span>Upgrade My Plan for Permit Approval</span>
+                                <span>Upgrade to Membership ($129/mo)</span>
                             </button>
 
                             <button
@@ -220,9 +134,9 @@ export const UpsellPermitPackage: React.FC = () => {
                 </div>
 
                 <p className="text-center text-slate-400 text-xs mt-8 max-w-lg mx-auto">
-                    By clicking "Yes", you agree to the Terms of Service. The $950 engineering fee covers one specific plan for one specific address. Revisions or site changes may incur additional fees.
+                    By clicking "Upgrade", you join the monthly membership. You can cancel anytime. Engineering services for specific plans are billed separately with member discounts.
                 </p>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
