@@ -424,7 +424,7 @@ export const Home: React.FC = () => {
                             </li>
                             <li className="flex items-center gap-3 text-slate-700 text-lg">
                                 <CheckCircle2 className="w-6 h-6 text-safety-orange flex-shrink-0" />
-                                <strong>Thousands of completed residential and commercial projects.</strong>
+                                <strong>Over 7,000 completed residential and commercial projects delivered nationwide.</strong>
                             </li>
                             <li className="flex items-center gap-3 text-slate-700 text-lg">
                                 <CheckCircle2 className="w-6 h-6 text-safety-orange flex-shrink-0" />
@@ -460,9 +460,14 @@ export const Home: React.FC = () => {
                                 <span className="font-semibold text-slate-800">Permit-Ready Engineering</span>
                             </div>
                         </div>
-                        <p className="text-center text-slate-500 text-sm mt-8 font-medium bg-slate-100 py-3 rounded-full inline-block px-8 mx-auto table">
-                            Start with the plans. Upgrade when you're ready.
-                        </p>
+                        <div className="text-center mt-8">
+                            <button
+                                onClick={scrollToPricing}
+                                className="bg-safety-orange hover:bg-safety-orange-hover text-white font-bold py-3 px-8 rounded-lg shadow-md transition-colors inline-flex items-center gap-2"
+                            >
+                                Order Your Permit-Ready Plans <ArrowRight className="w-5 h-5" />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
