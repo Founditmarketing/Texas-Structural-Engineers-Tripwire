@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CheckCircle2, ArrowRight, ShieldCheck, AlertTriangle, FileText, MapPin, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -95,11 +95,7 @@ export const UpsellPermitPackage: React.FC = () => {
 
                         </div>
 
-                        {error && (
-                            <div className="bg-red-50 text-red-600 p-3 rounded mb-4 text-sm font-bold text-center">
-                                {error}
-                            </div>
-                        )}
+
 
                         <div className="flex flex-col gap-4">
                             <button
