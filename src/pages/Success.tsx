@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, CheckCircle, ArrowRight } from 'lucide-react';
+import { Download, CheckCircle, ArrowRight, AlertTriangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Success: React.FC = () => {
