@@ -325,7 +325,7 @@ export const Home: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                        <span>Upgrade opportunities available</span>
+                                        <span>Upgrade to stamped plans available</span>
                                     </li>
                                 </ul>
 
