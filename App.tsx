@@ -5,6 +5,7 @@ import { Checkout } from './src/pages/Checkout';
 import { Success } from './src/pages/Success';
 import { UpsellPermitPackage } from './src/pages/UpsellPermitPackage';
 import { UpsellSitePlan } from './src/pages/UpsellSitePlan';
+import { ThankYou } from './src/pages/ThankYou';
 
 // Wrapper to handle scroll to top on route change
 const ScrollToTop = () => {
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <Route path="/upsell-permit" element={<UpsellPermitPackage />} />
         <Route path="/upsell-site" element={<UpsellSitePlan />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </Router>
   );
