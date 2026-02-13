@@ -3,7 +3,7 @@ import { FaqItem, Testimonial } from './types';
 export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Will these plans pass in my city?",
-    answer: "Yes. Our plans are designed to the International Residential Code (IRC) 2021 standards, which are adopted by Texas, Florida, California, and most other states. While every local municipality has specific zoning quirks, the structural engineering is valid nationwide. We include a 'Permit Submission Guide' to help you navigate your local office."
+    answer: "Yes. Our plans are designed to the International Residential Code (IRC) 2021 standards, which are adopted by 49 out of 50 states. While every local municipality has specific zoning quirks, the structural engineering is valid nationwide. We include a 'Permit Submission Guide' to help you navigate your local office."
   },
   {
     question: "Do these plans come with a stamp?",
